@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import Slider from '../pages/components/Slider'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function Home() {
   return (
@@ -17,6 +19,7 @@ export default function Home() {
         <p className={styles.description}>
           Book Now by <a className={styles.refer} href="https://www.hourlyrooms.co.in/" target='blank'>Clicking Here</a>
         </p>
+        <Slider/>
 
         <div className={styles.grid}>
           <a href="https://www.hourlyrooms.co.in/search?service_name=MUMBAI%2C+MAHARASHTRA%2C+INDIA&start=2023-11-30&starttime=13&room_type=1" className={styles.card}>
@@ -70,6 +73,7 @@ export default function Home() {
           align-items: center;
         }
         footer {
+          background-color: darkgrey;
           width: 100%;
           height: 100px;
           border-top: 1px solid #eaeaea;

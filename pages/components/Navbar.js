@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className={styles.topnav}>
         <ul>
           <div className={styles.listitem}>
-          <a href="https://www.hourlyrooms.co.in/" target='blank'>
+          <a href="/">
           <img src="/hor.png" alt="Hourlyrooms Logo" className={styles.navlogo} /></a>
           <Link className={styles.navlink}href={'/about'}><li>About US</li></Link>
           <Link className={styles.navlink}href={'/contact'}><li>Contact US</li></Link>

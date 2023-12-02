@@ -88,6 +88,16 @@
   font-size: 1.25rem;
   line-height: 1.5;
 }
+.topnav{
+  margin: 0;
+  width: 100%;
+  /* background-color: rgba(0,0,0,0.3);  Set the transparency to 0.3 */
+  overflow: hidden;
+  padding: 0;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
 
 .logo {
   height: 1em;
@@ -95,8 +105,6 @@
 .topnav ul{
   display: flex;
   justify-content: space-between;
-  padding: 5px;
-  margin: 25px;
 }
 .listitem{
   display: flex;
@@ -106,7 +114,6 @@
 }
 .topnav ul li{
   list-style: none;
-  padding: 5px;
 }
 .listsearch{
   margin-bottom: 7px;
