@@ -1,7 +1,5 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import script from 'next/script'
-import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -11,21 +9,6 @@ export default function Home() {
         </title>
         <link rel="icon" href="/hor.png" />
       </Head>
-      <nav className={styles.topnav}>
-        <ul>
-          <div className={styles.listitem}>
-          <a href="https://www.hourlyrooms.co.in/" target='blank'>
-          <img src="/hor.png" alt="Hourlyrooms Logo" className={styles.navlogo} /></a>
-          <Link className={styles.navlink}href={'/about'}><li>About US</li></Link>
-          <Link className={styles.navlink}href={'/contact'}><li>Contact US</li></Link>
-          <Link className={styles.navlink}href={'/hotels'}><li>Hotels</li></Link>
-          <Link className={styles.navlink}href={'/city'}><li>City</li></Link>
-          </div>
-          <div className={styles.listsearch}>
-          <input type="text" placeholder="Type City or Hotel.."></input>
-          </div>
-        </ul>
-      </nav>
       <main>
         <h1 className={styles.title}>
           Welcome to <a href="https://www.hourlyrooms.co.in/" target='blank'>
