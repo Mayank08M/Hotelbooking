@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function Home() {
   return (
+    <>
     <div className={styles.container}>
       <Head>
         <title>Hourlyrooms
@@ -51,6 +52,7 @@ export default function Home() {
           </a>
         </div>
       </main>
+      </div>
 
       <footer>
         <a
@@ -130,6 +132,6 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
-    </div>
+    </>
   );
 }
