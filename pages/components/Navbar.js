@@ -15,8 +15,8 @@ const Navbar = () => {
           <Link className={styles.navlink}href={'/hotels'}><li>Hotels</li></Link>
           <Link className={styles.navlink}href={'/city'}><li>City</li></Link>
           </div>
-          <div className={styles.listsearch}>
-          <input type="text" placeholder="Type City or Hotel.."></input>
+          <div>
+          <input className={styles.listsearch} type="text" placeholder="Type City or Hotel.."></input>
           </div>
         </ul>
       </nav>

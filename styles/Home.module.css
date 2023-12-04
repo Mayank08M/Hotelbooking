@@ -105,6 +105,8 @@
 .topnav ul{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2px;
+  margin-top: 5px;
 }
 .listitem{
   display: flex;
@@ -117,6 +119,8 @@
 }
 .listsearch{
   margin-bottom: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.25) !important;
+  padding: 5px 40px 5px 15px;
 }
 .navlogo{
   display: flex;
