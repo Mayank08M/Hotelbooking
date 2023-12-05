@@ -5,6 +5,7 @@
   flex-direction: column; */
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
 }
 
 
@@ -56,6 +57,18 @@
 
   max-width: 800px;
   margin-top: 3rem;
+}
+.grid a:hover{
+  background-color: rgb(248, 101, 101);
+  color: white;
+  border: 1px solid rgb(248, 101, 101);
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+.grid a{
+  background-color: white;
+  color: black;
+  border: 1px solid white;
 }
 
 .card {
