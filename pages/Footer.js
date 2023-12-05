@@ -58,9 +58,9 @@ const footer = () => {
               <div className={styles.content}>
                 <ul className={styles.quicklink}>
                   <li className={styles.linkli}><a className={styles.linka} href="/">Home</a></li>
-                  <li className={styles.linkli}><a className={styles.linka} href="#">Hotels</a></li>
-                  <li className={styles.linkli}><a className={styles.linka} href="#">About</a></li>
-                  <li className={styles.linkli}><a className={styles.linka} href="#">Contact Us</a></li>
+                  <li className={styles.linkli}><a className={styles.linka} href="/hotels">Hotels</a></li>
+                  <li className={styles.linkli}><a className={styles.linka} href="/about">About</a></li>
+                  <li className={styles.linkli}><a className={styles.linka} href="/contact">Contact Us</a></li>
                 </ul>
               </div>
             </div>
@@ -70,7 +70,7 @@ const footer = () => {
               </div>
               <div className={styles.content}>
                 <ul className={styles.quicklink}>
-                  <li className={styles.linkli}><a className={styles.linka} href="/">Jobs</a></li>
+                  <li className={styles.linkli}><a className={styles.linka} href="#">Jobs</a></li>
                   <li className={styles.linkli}><a className={styles.linka} href="#">Employees</a></li>
                   <li className={styles.linkli}><a className={styles.linka} href="#">Benefits</a></li>
                 </ul>
@@ -83,7 +83,7 @@ const footer = () => {
               </div>
               <div className={styles.content}>
                 <ul className={styles.contactlist}>
-                  <li className={styles.linkli}><a className={styles.linka} href="/"><Image
+                  <li className={styles.linkli}><a className={styles.linka} href="#"><Image
                 className={styles.cicon}
                 src={Dialer}
                 alt="dialer icon"
