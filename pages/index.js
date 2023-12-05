@@ -54,17 +54,6 @@ export default function Home() {
       </main>
       </div>
 
-      <footer>
-        <a
-          href="https://www.hourlyrooms.co.in/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/hor.png" alt="Hourlyrooms Logo" className={styles.logo} />
-        </a>
-      </footer>
-
       <style jsx>{`
         main {
           padding: 0;

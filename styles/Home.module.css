@@ -25,6 +25,7 @@
 .navlink:hover{
   transition: 0.5;
   transform: scale(1.1);
+  color: red;
 }
 
 .title {

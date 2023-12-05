@@ -1,0 +1,36 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: darkgrey;
+  }
+.footer a{
+    text-decoration: none;
+  }
+.rights{
+    padding-left: 15px;
+    margin-bottom: 0;
+  }
+.logo{
+    height: 1em;
+}
+.fbottom{
+    display: flex;
+    justify-content: center;
+}
+.topall{
+    display: flex;
+    justify-content: space-between;
+}
+.topone{
+    text-align: left;
+}
+.para{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
