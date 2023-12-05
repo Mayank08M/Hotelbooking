@@ -4,6 +4,9 @@ import Image from 'next/image'
 import Twitter from '../pages/components/images/Icons/twittericon.png'
 import Insta from '../pages/components/images/Icons/instaicon.png'
 import Facebook from '../pages/components/images/Icons/fbicon.png'
+import Dialer from '../pages/components/images/Icons/dialer.png'
+import Location from '../pages/components/images/Icons/location.png'
+import Mail from '../pages/components/images/Icons/mail.png'
 
 
 const footer = () => {
@@ -73,6 +76,36 @@ const footer = () => {
                 </ul>
               </div>
 
+            </div>
+            <div className={styles.topfour}>
+            <div className={styles.divheadl}>
+                <p>Contact</p>
+              </div>
+              <div className={styles.content}>
+                <ul className={styles.contactlist}>
+                  <li className={styles.linkli}><a className={styles.linka} href="/"><Image
+                className={styles.cicon}
+                src={Dialer}
+                alt="dialer icon"
+                width={30}
+                height={20}
+              />+91 254631782</a></li>
+                  <li className={styles.linkli}><a className={styles.linka} href="#"><Image
+                className={styles.cicon}
+                src={Mail}
+                alt="mail icon"
+                width={30}
+                height={20}
+              />care@hourlyrooms.co.in </a></li>
+                  <li className={styles.linkli}><a className={styles.linka} href="#"><Image
+                className={styles.cicon}
+                src={Location}
+                alt="location icon"
+                width={30}
+                height={20}
+              />Antariksh House,Marol</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

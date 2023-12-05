@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from '../styles/Home.module.css'
 
 const hotels = () => {
   return (
-    <div>Pick the best hotels for you.</div>
+    <div className={styles.container}>Pick the best hotels for you.</div>
   )
 }
 

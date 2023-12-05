@@ -46,7 +46,7 @@
     display: flex;
     justify-content: space-between;
     margin-left: 5rem;
-    margin-right: 20rem;
+    margin-right: 10rem;
 }
 .topone{
     text-align: left;
@@ -99,6 +99,21 @@
     transition: all 0.5s;
     cursor: pointer;
   }
+.cicon{
+    margin-right: 10px;
+}
+.contactlist{
+    text-align: left;
+    list-style: none;
+    padding-left: 0;
+}
+.divheadl{
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-weight: bold;
+    padding-left: 10px;
+}
   
 .linka{
     cursor: pointer;
