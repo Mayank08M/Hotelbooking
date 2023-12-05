@@ -1,6 +1,9 @@
 import React from 'react'
 import styles from '../styles/Footer.module.css'
 import Image from 'next/image'
+import Twitter from '../pages/components/images/Icons/twittericon.png'
+import Insta from '../pages/components/images/Icons/instaicon.png'
+import Facebook from '../pages/components/images/Icons/fbicon.png'
 
 
 const footer = () => {
@@ -11,7 +14,9 @@ const footer = () => {
         <div className={styles.ftop}>
           <div className={styles.topall}>
             <div className={styles.topone}>
+              <div className={styles.toplogodiv}>
             <a
+              className={styles.toplogo}
               href="https://www.hourlyrooms.co.in/"
               target="_blank"
               rel="noopener noreferrer"
@@ -19,21 +24,54 @@ const footer = () => {
             Hourlyrooms {' '} 
               <img src="/hor.png" alt="Hourlyrooms Logo" className={styles.logo} />
             </a>
+            </div>
             <p className={styles.para}>We are India's number 1<br/> hourly hotel booking platform.<br/>
             You can trust us without any doubt.</p>
-            <ul>
-              <li><a><Image
-                src="/home/dell/Downloads/p-project1/nextjs-blog/pages/components/images/Icons/pngfind.com-giant-monster-png-3815873.png"
-                alt="sample image"
-                width={600}
-                height={400}
+            <ul className={styles.iconul}>
+              <li className={styles.iconsli}><a className={styles.fb} href="https://www.facebook.com/hourlyroomsindia/" target="_blank"><Image
+                src={Facebook}
+                alt="facebook icon"
+                width={30}
+                height={20}
+              /></a></li>
+              <li className={styles.iconsli}><a className={styles.insta} href="https://www.instagram.com/hourlyrooms.co.in/" target="_blank"><Image
+                src={Insta}
+                alt="insta icon"
+                width={30}
+                height={20}
+              /></a></li>
+              <li className={styles.iconsli}><a className={styles.twitter} href="https://x.com/hourly_rooms?s=20" target="_blank"><Image
+                src={Twitter}
+                alt="twitter icon"
+                width={30}
+                height={20}
               /></a></li>
             </ul>
             </div>
             <div className={styles.toptwo}>
-
+              <div className={styles.divhead}>
+                <p>Explore</p>
+              </div>
+              <div className={styles.content}>
+                <ul className={styles.quicklink}>
+                  <li className={styles.linkli}><a className={styles.linka} href="/">Home</a></li>
+                  <li className={styles.linkli}><a className={styles.linka} href="#">Hotels</a></li>
+                  <li className={styles.linkli}><a className={styles.linka} href="#">About</a></li>
+                  <li className={styles.linkli}><a className={styles.linka} href="#">Contact Us</a></li>
+                </ul>
+              </div>
             </div>
             <div className={styles.topthree}>
+            <div className={styles.divhead}>
+                <p>Careers</p>
+              </div>
+              <div className={styles.content}>
+                <ul className={styles.quicklink}>
+                  <li className={styles.linkli}><a className={styles.linka} href="/">Jobs</a></li>
+                  <li className={styles.linkli}><a className={styles.linka} href="#">Employees</a></li>
+                  <li className={styles.linkli}><a className={styles.linka} href="#">Benefits</a></li>
+                </ul>
+              </div>
 
             </div>
           </div>

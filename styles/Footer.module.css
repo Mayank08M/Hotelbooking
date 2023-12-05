@@ -1,11 +1,25 @@
 .footer{
-    display: flex;
-    justify-content: center;
+    padding-top: 5rem;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
-    background-color: darkgrey;
+    background-color: black;
+    color: rgb(248, 248, 248);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
   }
+.container{
+    padding-top: 2rem;
+}
+.toplogodiv{
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+.toplogo{
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: x-large;
+}
 .footer a{
     text-decoration: none;
   }
@@ -16,13 +30,23 @@
 .logo{
     height: 1em;
 }
+.ftop{
+    /* display: flex;
+    justify-content: space-between; */
+    width: 100%;
+    margin-bottom: 2rem;
+}
 .fbottom{
+    border-top: 1px dashed whitesmoke;
+    padding-top: 10px;
     display: flex;
     justify-content: center;
 }
 .topall{
     display: flex;
     justify-content: space-between;
+    margin-left: 5rem;
+    margin-right: 20rem;
 }
 .topone{
     text-align: left;
@@ -34,3 +58,69 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+.iconul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    width: 10rem;
+}
+.quicklink{
+    list-style: none;
+    align-items: flex-start;
+    text-align: left;
+}
+.divhead{
+    font-size: larger;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif
+}
+.linkli{
+    padding-top: 8px;
+}
+.iconli{
+    padding-left: 3px;
+}
+.iconul li:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+.linka{
+    text-decoration: none;
+}
+.linka {
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    padding: 16px;
+    width: 88px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+.linka{
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+.linka:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+.linka:hover{
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  
+.linka:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
