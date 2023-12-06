@@ -1,0 +1,133 @@
+
+  
+/* .upbody {
+    height: 100vh;
+    background: #666666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Balsamiq Sans', sans-serif;
+    width: 100%;
+  }
+  
+  .body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+  
+  .card {
+    width: 70%;
+    padding: 30px 90px 90px 90px;
+    border: 6px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    position: relative;
+    margin: 5rem;
+  }
+  
+  .card h2 {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 60px;
+    text-transform: uppercase;
+  }
+  
+  .card .row {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid: auto / auto auto;
+    grid-template-columns: repeat(auto-fit,minmax(40%, 1fr));
+    grid-gap: 30px;
+  }
+  
+  .card .row .col {
+    position: relative;
+    width: 100%;
+    margin: 30px 20px 40px 0;
+    transition: 0.5s;
+  }
+  
+  .card .row .formgroup {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: black;
+  }
+  
+  .card .row .formgroup input,
+  .card .row .formgroup textarea {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    font-size: 24px;
+    padding: 10px 0 10px 20px;
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+    color: black;
+    border-radius: 50px;
+  }
+  
+  .card .row .formgroup label {
+    line-height: 40px;
+    color: black;
+    font-size: 24px;
+    margin: 0 0 0 30px;
+    display: block;
+    pointer-events: none;
+  }
+  
+  .row .col:nth-child(6) {
+    margin-top: 64px;
+  }
+  
+  .card .row .formgroup input:focus,
+  .card .row .formgroup textarea:focus {
+    border: 5px solid black;
+    transition: all 0.5s;
+  }
+  
+  .card .row button[type="submit"] {
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    height: 100%;
+    width: 50%;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    text-transform: uppercase;
+    color: black;
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 45px;
+    transition: all 0.4s;
+  }
+  
+  .card .row button[type="submit"]:hover {
+    background-color: rgb(248, 101, 101);
+    color: white;
+    border: 5px solid rgb(248, 101, 101);
+    transition: all 0.4s;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .card .row {
+      grid-template-columns: repeat(auto-fit,minmax(70%, 1fr));
+    }
+    
+    .card {
+      padding: 20px;
+    }
+    
+    .card h2 {
+      font-size: 34px;
+    }
+    
+    .card .row button[type="submit"] {
+      width: 100%;
+    }
+  }
