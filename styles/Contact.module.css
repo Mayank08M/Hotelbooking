@@ -23,6 +23,8 @@
     box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.3);
     border-radius: 50px;
     position: relative;
+    background: rgb(224, 251, 222);
+    background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(248, 101, 101) 100%);
     margin: 10rem;
   }
   

@@ -7,8 +7,6 @@ const contact = () => {
   const [firstname, setFirstname] = useState('')
   const [email, setEmail] = useState('')
   const [phone, sePhone] = useState('')
-
-
   function handleOnchangeFirstName(e) {
     setFirstname(e.target.value)
   }
@@ -16,11 +14,8 @@ const contact = () => {
     setEmail(e.target.value)
   }
   function handleOnchangePhone(e) {
-    sePhone(e.target.value)
+    setPhone(e.target.value)
   }
-
-
-
   function myFunction() {
 
     if (!(firstname && email && phone)) {
