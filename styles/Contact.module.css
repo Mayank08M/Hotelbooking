@@ -23,14 +23,12 @@
     box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.3);
     border-radius: 50px;
     position: relative;
-    background: rgb(224, 251, 222);
-    background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(248, 101, 101) 100%);
     margin: 10rem;
   }
   
   .card h2 {
     color: rgba(0, 0, 0, 0.3);
-    font-size: 60px;
+    font-size: 40px;
     text-transform: uppercase;
   }
   
@@ -64,8 +62,8 @@
     height: 100%;
     background: transparent;
     outline: none;
-    font-size: 24px;
-    padding: 10px 0 10px 20px;
+    font-size: 20px;
+    padding: 6px 0 5px 10px;
     border: 5px solid rgba(0, 0, 0, 0.3);
     box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
     color: black;
@@ -75,7 +73,7 @@
   .card .row .formgroup label {
     line-height: 40px;
     color: black;
-    font-size: 24px;
+    font-size: 20px;
     margin: 0 0 0 30px;
     display: block;
     pointer-events: none;
@@ -103,7 +101,7 @@
     text-transform: uppercase;
     color: black;
     line-height: 40px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     border-radius: 45px;
     transition: all 0.4s;
