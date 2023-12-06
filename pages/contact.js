@@ -6,7 +6,7 @@ const contact = () => {
   let router = useRouter();
   const [firstname, setFirstname] = useState('')
   const [email, setEmail] = useState('')
-  const [phone, sePhone] = useState('')
+  const [phone, setPhone] = useState('')
   function handleOnchangeFirstName(e) {
     setFirstname(e.target.value)
   }

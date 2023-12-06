@@ -22,11 +22,13 @@
 .navlink{
   text-decoration: none;
   color: black;
+  font-weight: bold;
 }
 .navlink:hover{
   transition: 0.5;
   transform: scale(1.1);
   color: red;
+  cursor: pointer;
 }
 
 .title {
