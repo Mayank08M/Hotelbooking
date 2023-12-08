@@ -1,0 +1,30 @@
+
+[
+    {
+      "id": 1,
+      "name": "Hotel A",
+      "location": "City A",
+      "image": "./images/pondview.jpg",
+      "tag1": "Budget",
+      "tag2": "Couple Friendly",
+      "tag3": "Local ID Accepted"
+    },
+    {
+      "id": 2,
+      "name": "Hotel B",
+      "location": "City B",
+      "image": "./images/poolview.jpg",
+      "tag1": "Premium",
+      "tag2": "Buisness Friendly",
+      "tag3": "Local ID Accepted"
+    },
+    {
+      "id": 3,
+      "name": "Hotel C",
+      "location": "City C",
+      "image": "./images/windowview.jpg",
+      "tag1": "Economic",
+      "tag2": "Couple Friendly",
+      "tag3": "Local ID Not Accepted"
+    }
+  ]

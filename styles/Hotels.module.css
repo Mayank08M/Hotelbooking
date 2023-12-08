@@ -1,0 +1,7 @@
+.topdiv{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    padding: 10px;
+
+}

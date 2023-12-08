@@ -5,7 +5,7 @@ import Twitter from '../images/Icons/twittericon.png'
 import Insta from '../images/Icons/instaicon.png'
 import Facebook from '../images/Icons/fbicon.png'
 import Dialer from '../images/Icons/dialer.png'
-import Location from '../images/Icons/location.png'
+import Location from '/images/Icons/location.png'
 import Mail from '../images/Icons/mail.png'
 
 
