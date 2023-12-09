@@ -59,7 +59,7 @@ const Navbar = () => {
             )
           })}
         </div>
-        <input placeholder='Search for hotels or Cities' />
+        <input className={styles.search} placeholder='Search for hotels or Cities' />
       </div>
     </>
   )

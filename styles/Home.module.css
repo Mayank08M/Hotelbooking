@@ -10,6 +10,11 @@
 .navimg{
   cursor: pointer;
 }
+.search{
+  border: 1px solid grey;
+  padding: 5px;
+  border-radius: 10px;
+}
 
 
 .title a {
