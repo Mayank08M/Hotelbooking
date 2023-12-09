@@ -1,12 +1,12 @@
 import React from 'react'
 import styles from '../styles/Footer.module.css'
 import Image from 'next/image'
-import Twitter from '../images/Icons/twittericon.png'
-import Insta from '../images/Icons/instaicon.png'
-import Facebook from '../images/Icons/fbicon.png'
-import Dialer from '../images/Icons/dialer.png'
-import Location from '/images/Icons/location.png'
-import Mail from '../images/Icons/mail.png'
+import Twitter from '../public/images/Icons/twittericon.png'
+import Insta from '../public/images/Icons/instaicon.png'
+import Facebook from '../public/images/Icons/fbicon.png'
+import Dialer from '../public/images/Icons/dialer.png'
+import Location from '../public/images/Icons/location.png'
+import Mail from '../public/images/Icons/mail.png'
 
 
 const footer = () => {

@@ -2,29 +2,122 @@
 [
     {
       "id": 1,
-      "name": "Hotel A",
-      "location": "City A",
+      "name": "Hotel Safalta",
+      "location": "Andheri, Mumbai",
       "image": "./images/pondview.jpg",
       "tag1": "Budget",
       "tag2": "Couple Friendly",
-      "tag3": "Local ID Accepted"
+      "tag3": "Local ID Accepted",
+      "price": 3000
     },
     {
       "id": 2,
-      "name": "Hotel B",
-      "location": "City B",
+      "name": "Hotel Happy",
+      "location": "Powai, Mumbai",
       "image": "./images/poolview.jpg",
       "tag1": "Premium",
       "tag2": "Buisness Friendly",
-      "tag3": "Local ID Accepted"
+      "tag3": "Local ID Accepted",
+      "price": 2500
     },
     {
       "id": 3,
-      "name": "Hotel C",
-      "location": "City C",
+      "name": "Hotel Spring Hill",
+      "location": "Seepz, Andheri",
       "image": "./images/windowview.jpg",
       "tag1": "Economic",
       "tag2": "Couple Friendly",
-      "tag3": "Local ID Not Accepted"
+      "tag3": "Local ID Not Accepted",
+      "price": 2000
+    },
+    {
+      "id": 4,
+      "name": "JW Marriot",
+      "location": "Juhu, Mumbai",
+      "image": "./images/hotel1.jpg",
+      "tag1": "Luxury",
+      "tag2": "Couple Friendly",
+      "tag3": "Local ID Accepted",
+      "price": 4500
+    },
+    {
+      "id": 5,
+      "name": "Hotel Triton",
+      "location": "Sion, Mumbai",
+      "image": "./images/hotel2.jpg",
+      "tag1": "Premium",
+      "tag2": "Couple Friendly",
+      "tag3": "Local ID Accepted",
+      "price": 1500
+    },
+    {
+      "id": 6,
+      "name": "Hotel Occazia",
+      "location": "Jogeshwari, Mumbai",
+      "image": "./images/hotel3.jpg",
+      "tag1": "Economic",
+      "tag2": "Couple Friendly",
+      "tag3": "Local ID Accepted",
+      "price": 1500
+    },
+    {
+      "id": 7,
+      "name": "Hotel Amber",
+      "location": "Kandivali, Mumbai",
+      "image": "./images/hotel4.jpg",
+      "tag1": "Economic",
+      "tag2": "Couple Friendly",
+      "tag3": "Local ID Accepted",
+      "price": 1500
+    },
+    {
+      "id": 8,
+      "name": "Hotel Elegant",
+      "location": "Borivali, Mumbai",
+      "image": "./images/hotel5.jpg",
+      "tag1": "Budget",
+      "tag2": "Couple Friendly",
+      "tag3": "Local ID Accepted",
+      "price": 1000
+    },
+    {
+      "id": 9,
+      "name": "Hotel Shrikant",
+      "location": "Mahakali, Andheri",
+      "image": "./images/hotel6.jpg",
+      "tag1": "Budget",
+      "tag2": "Couple Friendly",
+      "tag3": "Local ID Accepted",
+      "price": 1500
+    },
+    {
+      "id": 10,
+      "name": "Arts International",
+      "location": "Bandra, Mumbai",
+      "image": "./images/hotel7.jpg",
+      "tag1": "Premium",
+      "tag2": "Couple Friendly",
+      "tag3": "Local ID Accepted",
+      "price": 3500
+    },
+    {
+      "id": 11,
+      "name": "Hotel Green Park",
+      "location": "Andheri, Mumbai",
+      "image": "./images/hotel8.jpg",
+      "tag1": "Economic",
+      "tag2": "Buisness Friendly",
+      "tag3": "Local ID Accepted",
+      "price": 1500
+    },
+    {
+      "id": 12,
+      "name": "Hotel Versova IN",
+      "location": "Versova, Andheri West",
+      "image": "./images/hotel9.jpg",
+      "tag1": "Premium",
+      "tag2": "Couple Friendly",
+      "tag3": "Local ID Accepted",
+      "price": 1500
     }
   ]

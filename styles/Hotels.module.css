@@ -5,3 +5,21 @@
     padding: 10px;
 
 }
+.price{
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.maindiv{
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-width: 0;
+    border: 2px solid #e5e7eb;
+}
+.maindiv:hover{
+    transform: scale(1.03);
+    transition: 0.2s;
+    border: 2px solid rgb(167, 166, 166);
+    cursor: pointer;
+}
