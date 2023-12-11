@@ -6,7 +6,7 @@ import Hotelstyles from '../styles/Hotels.module.css'
 
 const hotels = () => {
   return (
-    <div className={Hotelstyles.container}>
+    <div className={styles.container}>
       <div className={Hotelstyles.topdiv}>
       
 

@@ -83,21 +83,21 @@ const footer = () => {
               </div>
               <div className={styles.content}>
                 <ul className={styles.contactlist}>
-                  <li className={styles.linkli}><a className={styles.linka} href="#"><Image
+                  <li><a className={styles.linka} href="#"><Image
                 className={styles.cicon}
                 src={Dialer}
                 alt="dialer icon"
                 width={30}
                 height={20}
-              />+91 254631782</a></li>
-                  <li className={styles.linkli}><a className={styles.linka} href="#"><Image
+              />+91 2546317825</a></li>
+                  <li><a className={styles.linka} href="#"><Image
                 className={styles.cicon}
                 src={Mail}
                 alt="mail icon"
                 width={30}
                 height={20}
               />care@hourlyrooms.co.in </a></li>
-                  <li className={styles.linkli}><a className={styles.linka} href="#"><Image
+                  <li><a className={styles.linka} href="#"><Image
                 className={styles.cicon}
                 src={Location}
                 alt="location icon"

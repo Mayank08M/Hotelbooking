@@ -20,6 +20,7 @@
 .title a {
   color: black;
   text-decoration: none;
+  padding-left: 1rem;
 }
 
 .title a:hover,
@@ -53,6 +54,7 @@
   margin: 0 0 1rem;
   line-height: 1.15;
   font-size: 3.6rem;
+  display: flex;
 }
 
 .title {
