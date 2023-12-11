@@ -21,7 +21,7 @@ const navbarTabs = [
   {
     id: 4,
     item: 'Cities',
-    route: '/'
+    route: 'city'
   }
 ]
 
