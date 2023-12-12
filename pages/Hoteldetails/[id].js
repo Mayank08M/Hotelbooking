@@ -191,14 +191,14 @@ const Hoteldetail = () => {
                                     <h3 class=" fs-2 mb-4">Location</h3>
                                     <div class="d-flex">
                                         <div class="me-5">
-                                            <p> <span class="fw-bold text-light">Address :</span> 10425 Tabor St</p>
-                                            <p> <span class="fw-bold text-light">City :</span> Los Angeles</p>
-                                            <p> <span class="fw-bold text-light">State/county :</span> California</p>
+                                            <p> <span class="fw-bold text-dark">Address :</span> 10425 Tabor St</p>
+                                            <p> <span class="fw-bold text-dark">City :</span> Los Angeles</p>
+                                            <p> <span class="fw-bold text-dark">State/county :</span> California</p>
                                         </div>
                                         <div class="ms-5">
-                                            <p> <span class="fw-bold text-light">Zip/Postal Code :</span> 90034</p>
-                                            <p> <span class="fw-bold text-light">Area :</span> Brookside</p>
-                                            <p> <span class="fw-bold text-light">Country :</span> United States</p>
+                                            <p> <span class="fw-bold text-dark">Zip/Postal Code :</span> 90034</p>
+                                            <p> <span class="fw-bold text-dark">Area :</span> Brookside</p>
+                                            <p> <span class="fw-bold text-dark">Country :</span> United States</p>
                                         </div>
                                     </div>
 
