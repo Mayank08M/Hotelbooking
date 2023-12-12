@@ -31,19 +31,19 @@ const footer = () => {
             <p className={styles.para}>We are India's number 1<br/> hourly hotel booking platform.<br/>
             You can trust us without any doubt.</p>
             <ul className={styles.iconul}>
-              <li className={styles.iconsli}><a className={styles.fb} href="https://www.facebook.com/hourlyroomsindia/" target="_blank"><Image
+              <li><a href="https://www.facebook.com/hourlyroomsindia/" target="_blank"><Image
                 src={Facebook}
                 alt="facebook icon"
                 width={30}
                 height={20}
               /></a></li>
-              <li className={styles.iconsli}><a className={styles.insta} href="https://www.instagram.com/hourlyrooms.co.in/" target="_blank"><Image
+              <li><a href="https://www.instagram.com/hourlyrooms.co.in/" target="_blank"><Image
                 src={Insta}
                 alt="insta icon"
                 width={30}
                 height={20}
               /></a></li>
-              <li className={styles.iconsli}><a className={styles.twitter} href="https://x.com/hourly_rooms?s=20" target="_blank"><Image
+              <li><a href="https://x.com/hourly_rooms?s=20" target="_blank"><Image
                 src={Twitter}
                 alt="twitter icon"
                 width={30}

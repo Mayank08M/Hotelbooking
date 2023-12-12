@@ -36,12 +36,6 @@ const Navbar = () => {
     router.push(`/${tabs}`)
   }
 
-  {/* <img src="/hor.png" alt="Hourlyrooms Logo" className={styles.navlogo} onClick={handleRedirectToHomepge} /> */ }
-  // {navbarTabs?.map((e) => {
-  //   return (
-  // <p className={styles.navlink} key={e?.id} onClick={() => handleRedirectToTabs(e?.route)} >{e?.item}</p>
-  //   )
-  // })}
   return (
     <>
       <div style={{ paddingLeft:20,paddingRight:20,height: 70, backgroundColor: "#fff",width: "100%", display:"flex", justifyContent:"space-between", alignItems:"center" , borderBottom:"1px solid gray", }}>
@@ -52,8 +46,8 @@ const Navbar = () => {
           {navbarTabs?.map((e) => {
             return (
 
-              <div className={styles.navpdiv} style={{padding:10 , display:"flex",alignItems:"center"}}>
-              <p className={styles.navp} style={{padding:0,margin:0}} key={e?.id} onClick={() => handleRedirectToTabs(e?.route)} >{e?.item}</p>
+              <div className={styles.navpdiv} key={e?.id} style={{padding:10 , display:"flex",alignItems:"center"}}>
+              <p className={styles.navp} style={{padding:0,margin:0}}  onClick={() => handleRedirectToTabs(e?.route)} >{e?.item}</p>
 
               </div>
             )

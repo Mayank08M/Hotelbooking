@@ -2,9 +2,15 @@ import React from 'react'
 import styles from '../styles/Home.module.css'
 import hotelsData from '../components/hotelsData.json'
 import Hotelstyles from '../styles/Hotels.module.css'
+import Hoteldetail from '../pages/Hoteldetail'
+import Router, { useRouter } from 'next/router'
 
 
 const hotels = () => {
+
+
+  const router = useRouter();
+
   return (
     <div className={styles.container}>
       <div className={Hotelstyles.topdiv}>
@@ -13,7 +19,7 @@ const hotels = () => {
         {hotelsData?.map((hotel)=>{
           console.log(hotel, 'imagesss');
           return(
-            <div className={Hotelstyles.maindiv} key={hotel.id}>
+            <div onClick={()=> router.push("/Hoteldetail")} className={Hotelstyles.maindiv} key={hotel.id}>
             <img className="w-full" src={hotel.image} alt="Mountain"/>
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">{hotel.name}</div>

@@ -10,7 +10,6 @@ const city = () => {
       
 
         {hotelsData?.map((hotel)=>{
-          console.log(hotel, 'imagesss');
           return(
             <div className={Hotelstyles.maindiv} key={hotel.id}>
             <img className="w-full" src={hotel.image} alt="Mountain"/>
