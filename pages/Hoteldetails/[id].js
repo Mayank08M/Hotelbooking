@@ -1,16 +1,21 @@
 import React from 'react'
+import hotelDetails from "../../components/hotelDetail.json"
+import { useRouter } from 'next/router'
 
 const Hoteldetail = () => {
+    const router = useRouter();
+    console.log(router.query.id)
   return (
     <>
-    <p>hilvnhkvj</p>
     <div>
             <div class="post-wrap my-5">
         <div class="container">
 
             <div class="row mt-4 g-md-5">
                 <main class="post-grid col-md-9">
-                    <div class="row">
+                {hotelDetails?.map((hotel)=>{
+                    return(
+                    <div class="row" key={hotel.id}>
                         <article class="property">
 
                             <div class="row flex-column">
@@ -66,12 +71,12 @@ const Hoteldetail = () => {
                             <div class="post-content py-5">
 
                                 <div class="room-type d-flex justify-content-between my-5">
-                                    <h3 class="fs-2 mb-4">Classic Rooms - Double Bed</h3>
+                                    <h3 class="fs-2 mb-4">{hotel.name}</h3>
                                     
                                         <div>
                                         
                                             <p class="pe-2"><strong>Price:</strong></p>
-                                            <p class="price"><strong>299$</strong> /Pernight</p>
+                                            <p class="price"><strong>{hotel.price}₹</strong> /Pernight</p>
                                             
                                             </div>
                                     
@@ -88,7 +93,7 @@ const Hoteldetail = () => {
                                                 class="property-icon border p-3"></iconify-icon>
                                             <div class="ms-4">
                                                 <h5 class="fw-bold mt-2 fs-5 text-body-emphasis">Bed</h5>
-                                                <p>2</p>
+                                                <p>{hotel.bed}</p>
                                             </div>
                                         </div>
                                         <div class="col d-flex align-items-start">
@@ -104,7 +109,7 @@ const Hoteldetail = () => {
                                                 class="property-icon border p-3"></iconify-icon>
                                             <div class="ms-4">
                                                 <h5 class="fw-bold mt-2 fs-5 text-body-emphasis">Person</h5>
-                                                <p>4</p>
+                                                <p>{hotel.person}</p>
                                             </div>
                                         </div>
                                         <div class="col d-flex align-items-start">
@@ -120,7 +125,7 @@ const Hoteldetail = () => {
                                                 class="property-icon border p-3"></iconify-icon>
                                             <div class="ms-4">
                                                 <h5 class="fw-bold mt-2 fs-5 text-body-emphasis">Air Conditioner</h5>
-                                                <p>Yes</p>
+                                                <p>{hotel.AC}</p>
                                             </div>
                                         </div>
                                         <div class="col d-flex align-items-start">
@@ -128,7 +133,7 @@ const Hoteldetail = () => {
                                                 class="property-icon border p-3"></iconify-icon>
                                             <div class="ms-4">
                                                 <h5 class="fw-bold mt-2 fs-5 text-body-emphasis">TV Cable</h5>
-                                                <p>Yes</p>
+                                                <p>{hotel.TV}</p>
                                             </div>
                                         </div>
 
@@ -138,9 +143,9 @@ const Hoteldetail = () => {
                                 <hr/>
                                 <div class="price my-5">
                                     <h3 class=" fs-2 mb-4">Price Details</h3>
-                                    <p> <span class="fw-bold text-light">Per Night :</span> $299</p>
-                                    <p> <span class="fw-bold text-light">Service Charge :</span> $80 </p>
-                                    <p> <span class="fw-bold text-light">Cleaning Fee :</span> $50</p>
+                                    <p> <span class="fw-bold text-dark">Per Night :</span>{hotel.pernight}₹</p>
+                                    <p> <span class="fw-bold text-dark">Service Charge :</span>{hotel.service}₹ </p>
+                                    <p> <span class="fw-bold text-dark">Cleaning Fee :</span>{hotel.cleaning}₹</p>
 
                                 </div>
                                 <hr/>
@@ -323,6 +328,7 @@ const Hoteldetail = () => {
                             </div>
                         </section>
                     </div>
+                )})}
                 </main>
                 <aside class="col-md-3">
                     <div class=" ">
