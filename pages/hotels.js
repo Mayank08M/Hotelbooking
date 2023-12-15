@@ -1,11 +1,23 @@
 import React from 'react'
 import styles from '../styles/Home.module.css'
-import hotelsData from '../components/hotelsData.json'
+// import hotelsData from '../components/hotelsData.json'
 import Hotelstyles from '../styles/Hotels.module.css'
-import Router, { useRouter } from 'next/router'
+import { useRouter } from 'next/router'
+import { useState, useEffect } from 'react'
+import axios from 'axios'
+
+const baseURL = 'http://localhost:8000'
 
 
 const hotels = () => {
+  const [hoteldetails, setHoteldetails] = useState()
+
+useEffect(() => {
+    axios.get(`${baseURL}/hotels`).then((response) => {
+      console.log(response.data)
+      setHoteldetails(response.data);
+    });
+  }, []);
 
 
   const router = useRouter();
@@ -15,16 +27,16 @@ const hotels = () => {
       <div className={Hotelstyles.topdiv}>
       
 
-        {hotelsData?.map((hotel)=>{
+        {hoteldetails?.map((hotel)=>{
           return(
-            <div onClick={()=> router.push(`/Hoteldetails/${hotel?.id}`)} className={Hotelstyles.maindiv} key={hotel.id}>
+            <div onClick={()=> router.push(`/hotels/${hotel?._id}`)} className={Hotelstyles.maindiv} key={hotel.id}>
             <img className="w-full" src={hotel.image} alt="Mountain"/>
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">{hotel.name}</div>
               <p className="text-gray-700 text-base">
               {hotel.location}
               </p>
-              <div className={Hotelstyles.price}>{hotel.price}</div>
+              <div className={Hotelstyles.price}>{hotel.fprice}</div>
             </div>
             <div className="px-6 pt-4 pb-2">
             <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{hotel.tag1}</span>

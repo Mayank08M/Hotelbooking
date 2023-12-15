@@ -21,10 +21,14 @@
       "location": "Powai, Mumbai",
       "city":"Mumbai",
       "image": "./images/poolview.jpg",
-      "tag1": "Premium",
-      "tag2": "Buisness Friendly",
-      "tag3": "Local ID Accepted",
-      "price": 750
+      "AC": "Yes",
+      "person": "3",
+      "TV": "Yes",
+      "bed":"2",
+      "price": 800,
+      "pernight": 3500,
+      "service": 100,
+      "cleaning": 40
     },
     {
       "id": 3,
@@ -32,10 +36,14 @@
       "location": "Seepz, Andheri",
       "city":"Mumbai",
       "image": "./images/windowview.jpg",
-      "tag1": "Economic",
-      "tag2": "Couple Friendly",
-      "tag3": "Local ID Not Accepted",
-      "price": 500
+      "AC": "Yes",
+      "person": "2",
+      "TV": "Yes",
+      "bed":"1",
+      "price": 500,
+      "pernight": 2000,
+      "service": 100,
+      "cleaning": 30
     },
     {
       "id": 4,
@@ -43,10 +51,14 @@
       "location": "Juhu, Mumbai",
       "city":"Mumbai",
       "image": "./images/hotel1.jpg",
-      "tag1": "Luxury",
-      "tag2": "Couple Friendly",
-      "tag3": "Local ID Accepted",
-      "price": 1200
+      "AC": "Yes",
+      "person": "5",
+      "TV": "Yes",
+      "bed":"2",
+      "price": 1000,
+      "pernight": 4500,
+      "service": 200,
+      "cleaning": 100
     },
     {
       "id": 5,
@@ -54,10 +66,14 @@
       "location": "Sion, Mumbai",
       "city":"Mumbai",
       "image": "./images/hotel2.jpg",
-      "tag1": "Premium",
-      "tag2": "Couple Friendly",
-      "tag3": "Local ID Accepted",
-      "price": 450
+      "AC": "Yes",
+      "person": "2",
+      "TV": "Yes",
+      "bed":"2",
+      "price": 700,
+      "pernight": 3000,
+      "service": 100,
+      "cleaning": 50
     },
     {
       "id": 6,
@@ -65,10 +81,14 @@
       "location": "Jogeshwari, Mumbai",
       "city":"Mumbai",
       "image": "./images/hotel3.jpg",
-      "tag1": "Economic",
-      "tag2": "Couple Friendly",
-      "tag3": "Local ID Accepted",
-      "price": 450
+      "AC": "Yes",
+      "person": "3",
+      "TV": "Yes",
+      "bed":"2",
+      "price": 700,
+      "pernight": 2500,
+      "service": 100,
+      "cleaning": 40
     },
     {
       "id": 7,
@@ -76,10 +96,14 @@
       "location": "Kandivali, Mumbai",
       "city":"Mumbai",
       "image": "./images/hotel4.jpg",
-      "tag1": "Economic",
-      "tag2": "Couple Friendly",
-      "tag3": "Local ID Accepted",
-      "price": 450
+      "AC": "Yes",
+      "person": "4",
+      "TV": "Yes",
+      "bed":"2",
+      "price": 750,
+      "pernight": 3500,
+      "service": 120,
+      "cleaning": 30
     },
     {
       "id": 8,
@@ -87,10 +111,14 @@
       "location": "Borivali, Mumbai",
       "city":"Mumbai",
       "image": "./images/hotel5.jpg",
-      "tag1": "Budget",
-      "tag2": "Couple Friendly",
-      "tag3": "Local ID Accepted",
-      "price": 400
+      "AC": "Yes",
+      "person": "2",
+      "TV": "Yes",
+      "bed":"1",
+      "price": 600,
+      "pernight": 3000,
+      "service": 100,
+      "cleaning": 40
     },
     {
       "id": 9,
@@ -98,10 +126,14 @@
       "location": "Mahakali, Andheri",
       "city":"Mumbai",
       "image": "./images/hotel6.jpg",
-      "tag1": "Budget",
-      "tag2": "Couple Friendly",
-      "tag3": "Local ID Accepted",
-      "price": 1500
+      "AC": "Yes",
+      "person": "3",
+      "TV": "Yes",
+      "bed":"2",
+      "price": 800,
+      "pernight": 3500,
+      "service": 100,
+      "cleaning": 40
     },
     {
       "id": 10,
@@ -109,10 +141,14 @@
       "location": "Bandra, Mumbai",
       "city":"Mumbai",
       "image": "./images/hotel7.jpg",
-      "tag1": "Premium",
-      "tag2": "Couple Friendly",
-      "tag3": "Local ID Accepted",
-      "price": 750
+      "AC": "Yes",
+      "person": "3",
+      "TV": "Yes",
+      "bed":"2",
+      "price": 800,
+      "pernight": 3500,
+      "service": 100,
+      "cleaning": 40
     },
     {
       "id": 11,
@@ -120,10 +156,14 @@
       "location": "Andheri, Mumbai",
       "city":"Mumbai",
       "image": "./images/hotel8.jpg",
-      "tag1": "Economic",
-      "tag2": "Buisness Friendly",
-      "tag3": "Local ID Accepted",
-      "price": 500
+      "AC": "Yes",
+      "person": "3",
+      "TV": "Yes",
+      "bed":"2",
+      "price": 800,
+      "pernight": 3500,
+      "service": 100,
+      "cleaning": 40
     },
     {
       "id": 12,
@@ -131,9 +171,13 @@
       "location": "Versova, Andheri West",
       "city":"Mumbai",
       "image": "./images/hotel9.jpg",
-      "tag1": "Premium",
-      "tag2": "Couple Friendly",
-      "tag3": "Local ID Accepted",
-      "price": 400
+      "AC": "Yes",
+      "person": "3",
+      "TV": "Yes",
+      "bed":"2",
+      "price": 800,
+      "pernight": 3500,
+      "service": 100,
+      "cleaning": 40
     }
   ]

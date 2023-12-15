@@ -9,7 +9,15 @@
       "tag1": "Budget",
       "tag2": "Couple Friendly",
       "tag3": "Local ID Accepted",
-      "price": 3000
+      "fprice": 3000,
+      "AC": "Yes",
+      "person": "2",
+      "TV": "Yes",
+      "bed":"2",
+      "price": 900,
+      "pernight": 3600,
+      "service": 150,
+      "cleaning": 50
     },
     {
       "id": 2,
@@ -20,7 +28,15 @@
       "tag1": "Premium",
       "tag2": "Buisness Friendly",
       "tag3": "Local ID Accepted",
-      "price": 2500
+      "fprice": 2500,
+      "AC": "Yes",
+      "person": "3",
+      "TV": "Yes",
+      "bed":"2",
+      "price": 800,
+      "pernight": 3500,
+      "service": 100,
+      "cleaning": 40
     },
     {
       "id": 3,
@@ -31,7 +47,15 @@
       "tag1": "Economic",
       "tag2": "Couple Friendly",
       "tag3": "Local ID Not Accepted",
-      "price": 2000
+      "fprice": 2000,
+      "AC": "Yes",
+      "person": "2",
+      "TV": "Yes",
+      "bed":"1",
+      "price": 500,
+      "pernight": 2000,
+      "service": 100,
+      "cleaning": 30
     },
     {
       "id": 4,
@@ -42,7 +66,15 @@
       "tag1": "Luxury",
       "tag2": "Couple Friendly",
       "tag3": "Local ID Accepted",
-      "price": 4500
+      "fprice": 4500,
+      "AC": "Yes",
+      "person": "5",
+      "TV": "Yes",
+      "bed":"2",
+      "price": 1000,
+      "pernight": 4500,
+      "service": 200,
+      "cleaning": 100
     },
     {
       "id": 5,
@@ -53,7 +85,15 @@
       "tag1": "Premium",
       "tag2": "Couple Friendly",
       "tag3": "Local ID Accepted",
-      "price": 1500
+      "fprice": 1500,
+      "AC": "Yes",
+      "person": "2",
+      "TV": "Yes",
+      "bed":"2",
+      "price": 700,
+      "pernight": 3000,
+      "service": 100,
+      "cleaning": 50
     },
     {
       "id": 6,
@@ -64,7 +104,15 @@
       "tag1": "Economic",
       "tag2": "Couple Friendly",
       "tag3": "Local ID Accepted",
-      "price": 1500
+      "fprice": 1500,
+      "AC": "Yes",
+      "person": "3",
+      "TV": "Yes",
+      "bed":"2",
+      "price": 700,
+      "pernight": 2500,
+      "service": 100,
+      "cleaning": 40
     },
     {
       "id": 7,
@@ -75,7 +123,15 @@
       "tag1": "Economic",
       "tag2": "Couple Friendly",
       "tag3": "Local ID Accepted",
-      "price": 1500
+      "fprice": 1500,
+      "AC": "Yes",
+      "person": "4",
+      "TV": "Yes",
+      "bed":"2",
+      "price": 750,
+      "pernight": 3500,
+      "service": 120,
+      "cleaning": 30
     },
     {
       "id": 8,
@@ -86,7 +142,15 @@
       "tag1": "Budget",
       "tag2": "Couple Friendly",
       "tag3": "Local ID Accepted",
-      "price": 1000
+      "fprice": 1000,
+      "AC": "Yes",
+      "person": "2",
+      "TV": "Yes",
+      "bed":"1",
+      "price": 600,
+      "pernight": 3000,
+      "service": 100,
+      "cleaning": 40
     },
     {
       "id": 9,
@@ -97,7 +161,15 @@
       "tag1": "Budget",
       "tag2": "Couple Friendly",
       "tag3": "Local ID Accepted",
-      "price": 1500
+      "fprice": 1500,
+      "AC": "Yes",
+      "person": "3",
+      "TV": "Yes",
+      "bed":"2",
+      "price": 800,
+      "pernight": 3500,
+      "service": 100,
+      "cleaning": 40
     },
     {
       "id": 10,
@@ -108,7 +180,15 @@
       "tag1": "Premium",
       "tag2": "Couple Friendly",
       "tag3": "Local ID Accepted",
-      "price": 3500
+      "fprice": 3500,
+      "AC": "Yes",
+      "person": "3",
+      "TV": "Yes",
+      "bed":"2",
+      "price": 800,
+      "pernight": 3500,
+      "service": 100,
+      "cleaning": 40
     },
     {
       "id": 11,
@@ -119,7 +199,15 @@
       "tag1": "Economic",
       "tag2": "Buisness Friendly",
       "tag3": "Local ID Accepted",
-      "price": 1500
+      "fprice": 1500,
+      "AC": "Yes",
+      "person": "3",
+      "TV": "Yes",
+      "bed":"2",
+      "price": 800,
+      "pernight": 3500,
+      "service": 100,
+      "cleaning": 40
     },
     {
       "id": 12,
@@ -130,6 +218,14 @@
       "tag1": "Premium",
       "tag2": "Couple Friendly",
       "tag3": "Local ID Accepted",
-      "price": 1500
+      "fprice": 1500,
+      "AC": "Yes",
+      "person": "3",
+      "TV": "Yes",
+      "bed":"2",
+      "price": 800,
+      "pernight": 3500,
+      "service": 100,
+      "cleaning": 40
     }
   ]
