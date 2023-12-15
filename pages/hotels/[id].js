@@ -1,6 +1,8 @@
 import React from 'react'
 import { useRouter } from 'next/router'
 import axios from 'axios'
+import Image from 'next/image'
+import { Icon } from '@iconify/react';
 import { useEffect, useState } from 'react'
 import h1 from '../../public/images/h1.jpg'
 import h2 from '../../public/images/h2.jpg'
@@ -18,16 +20,18 @@ const baseURL = 'http://localhost:8000'
 const Hoteldetail = () => {
     const [details, setDetails] = useState()
     const router = useRouter();
-    useEffect(() => {
-        axios.get(`${baseURL}/hotels/${router.query.id}`)
-          .then((response) => {
-            setDetails(response.data);
-          })
-          .catch((error) => {
-            console.error('Error fetching hotel details:', error);
-            // Handle error state or display error message to the user
-          });
-      }, []);
+
+    async function getDetails(){
+        await axios.get(`${baseURL}/hotels/${router?.query?.id}`)?.then((res)=> {
+            setDetails(res?.data)
+        }).catch((err) => {
+            console.log(err,);
+        })
+    }
+
+    useEffect(() =>{
+        getDetails();
+    }, [router])
 
   return (
     <>
@@ -41,57 +45,55 @@ const Hoteldetail = () => {
                     <div class="row" key={details?.id}>
                         <article class="property">
                             <div class="row flex-column">
-                                {/* <div class="col-md-12">
+                                <div class="col-md-12">
                                     <div class="swiper product-large-slider">
                                         <div class="swiper-wrapper">
 
                                             <div class="swiper-slide">
-                                                <img src={h1} alt="Hotel-Image1" class="img-fluid"/>
+                                                <Image src={h1} alt="Hotel-Image2" class="img-fluid"></Image>
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src={h2} alt="Hotel-Image2" class="img-fluid"/>
+                                            <Image src={h2} alt="Hotel-Image2" class="img-fluid"></Image>
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src={h3} alt="Hotel-Image3"
-                                                    class="thumb-image img-fluid"/>
+                                            <Image src={h3} alt="Hotel-Image2" class="img-fluid"></Image>
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src={h4} alt="Hotel-Image4" class="img-fluid"/>
+                                            <Image src={h4} alt="Hotel-Image2" class="img-fluid"></Image>
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src={h5} alt="Hotel-Image5" class="img-fluid"/>
+                                            <Image src={h5} alt="Hotel-Image2" class="img-fluid"></Image>
                                             </div>
 
                                         </div>
                                     </div>
-                                </div> */}
-                                {/* <div class="col-md-12 mt-2">
+                                </div>
+                                <div class="col-md-12 mt-2">
                                     <div thumbsSlider="" class="swiper product-thumbnail-slider">
                                         <div class="swiper-wrapper">
 
                                             <div class="swiper-slide">
-                                                <img src={h6} alt="image1" class="thumb-image img-fluid"/>
+                                            <Image src={h6} alt="image2" class="thumb-image img-fluid"></Image>
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src={h7} alt="image2" class="thumb-image img-fluid"/>
+                                            <Image src={h7} alt="image2" class="thumb-image img-fluid"></Image>
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src={h8} alt="image3" class="thumb-image img-fluid"/>
+                                            <Image src={h8} alt="image2" class="thumb-image img-fluid"></Image>
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src={h9} alt="image4" class="thumb-image img-fluid"/>
+                                            <Image src={h9} alt="image2" class="thumb-image img-fluid"></Image>
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src={h10} alt="image5" class="thumb-image img-fluid"/>
+                                            <Image src={h10} alt="image2" class="thumb-image img-fluid"></Image>
                                             </div>
                                         </div>
                                     </div>
-                                </div> */}
+                                </div>
 
                             </div>
 
                             <div class="post-content py-5">
-
                                 <div class="room-type d-flex justify-content-between my-5">
                                     <h3 class="fs-2 mb-4">{details?.name}</h3>
                                     
@@ -111,48 +113,48 @@ const Hoteldetail = () => {
 
                                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 mt-1">
                                         <div class="col d-flex align-items-start">
-                                            <iconify-icon icon="fluent:bed-24-regular"
-                                                class="property-icon border p-3"></iconify-icon>
+                                            <Icon icon="fluent:bed-24-regular"
+                                                class="property-icon border p-3"></Icon>
                                             <div class="ms-4">
                                                 <h5 class="fw-bold mt-2 fs-5 text-body-emphasis">Bed</h5>
                                                 <p>{details?.bed}</p>
                                             </div>
                                         </div>
                                         <div class="col d-flex align-items-start">
-                                            <iconify-icon icon="material-symbols:shower-outline"
-                                                class="property-icon border p-3"></iconify-icon>
+                                            <Icon icon="material-symbols:shower-outline"
+                                                class="property-icon border p-3"></Icon>
                                             <div class="ms-4">
                                                 <h5 class="fw-bold mt-2 fs-5 text-body-emphasis">Bath</h5>
                                                 <p>2</p>
                                             </div>
                                         </div>
                                         <div class="col d-flex align-items-start">
-                                            <iconify-icon icon="fluent:person-16-regular"
-                                                class="property-icon border p-3"></iconify-icon>
+                                            <Icon icon="fluent:person-16-regular"
+                                                class="property-icon border p-3"></Icon>
                                             <div class="ms-4">
                                                 <h5 class="fw-bold mt-2 fs-5 text-body-emphasis">Person</h5>
                                                 <p>{details?.person}</p>
                                             </div>
                                         </div>
                                         <div class="col d-flex align-items-start">
-                                            <iconify-icon icon="bi:wifi"
-                                                class="property-icon border p-3"></iconify-icon>
+                                            <Icon icon="bi:wifi"
+                                                class="property-icon border p-3"></Icon>
                                             <div class="ms-4">
                                                 <h5 class="fw-bold mt-2 fs-5 text-body-emphasis">WiFi</h5>
                                                 <p>Free</p>
                                             </div>
                                         </div>
                                         <div class="col d-flex align-items-start">
-                                            <iconify-icon icon="material-symbols:ac-unit"
-                                                class="property-icon border p-3"></iconify-icon>
+                                            <Icon icon="material-symbols:ac-unit"
+                                                class="property-icon border p-3"></Icon>
                                             <div class="ms-4">
                                                 <h5 class="fw-bold mt-2 fs-5 text-body-emphasis">Air Conditioner</h5>
                                                 <p>{details?.AC}</p>
                                             </div>
                                         </div>
                                         <div class="col d-flex align-items-start">
-                                            <iconify-icon icon="fluent:tv-24-regular"
-                                                class="property-icon border p-3"></iconify-icon>
+                                            <Icon icon="fluent:tv-24-regular"
+                                                class="property-icon border p-3"></Icon>
                                             <div class="ms-4">
                                                 <h5 class="fw-bold mt-2 fs-5 text-body-emphasis">TV Cable</h5>
                                                 <p>{details?.TV}</p>
