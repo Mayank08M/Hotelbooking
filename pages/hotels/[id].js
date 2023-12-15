@@ -1,5 +1,7 @@
 import React from 'react'
 import { useRouter } from 'next/router'
+import { Carousel} from 'react-responsive-carousel'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import axios from 'axios'
 import Image from 'next/image'
 import { Icon } from '@iconify/react';
