@@ -73,7 +73,6 @@ const Hoteldetail = () => {
                                 <div class="col-md-12 mt-2">
                                     <div thumbsSlider="" class="swiper product-thumbnail-slider">
                                         <div class="swiper-wrapper">
-
                                             <div class="swiper-slide">
                                             <Image src={h6} alt="image2" class="thumb-image img-fluid"></Image>
                                             </div>

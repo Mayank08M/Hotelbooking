@@ -1,28 +1,56 @@
-import React, { useState } from 'react'
-import Contactstyles from '../styles/Contact.module.css'
-import { useRouter } from 'next/router'
+import React, { useState } from 'react';
+import Contactstyles from '../styles/Contact.module.css';
+import { useRouter } from 'next/router';
 
 const contact = () => {
-  let router = useRouter();
-  const [firstname, setFirstname] = useState('')
-  const [email, setEmail] = useState('')
-  const [phone, setPhone] = useState('')
+  const router = useRouter();
+  const [firstname, setFirstname] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [surname, setSurname] = useState('');
+  const [message, setMessage] = useState('');
+
   function handleOnchangeFirstName(e) {
-    setFirstname(e.target.value)
+    setFirstname(e.target.value);
   }
   function handleOnchangeEmail(e) {
-    setEmail(e.target.value)
+    setEmail(e.target.value);
   }
   function handleOnchangePhone(e) {
-    setPhone(e.target.value)
+    setPhone(e.target.value);
   }
-  function myFunction() {
+  function handleOnchangeSurname(e) {
+    setSurname(e.target.value);
+  }
+  function handleOnchangeMessage(e) {
+    setMessage(e.target.value);
+  }
 
+  async function myFunction() {
     if (!(firstname && email && phone)) {
-      alert(`Please enter ${!firstname ? "First name" : !email ? "Email" : !phone ? "Phone No." : null}`)
+      alert(`Please enter ${!firstname ? 'First name' : !email ? 'Email' : !phone ? 'Phone No.' : null}`);
     } else {
-      alert("Submitted Successfully!!!");
-      router.push('/');
+      alert('Submitted Successfully!!!');
+      try {
+        const response = await fetch('http://localhost:8000/adduser', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ firstname, surname, email, phone, message }), // Ensure all variables are properly set in the component state
+        });
+  
+        if (!response.ok) {
+          throw new Error('Failed to add user');
+        }
+  
+        const data = await response.json();
+        console.log('New user added:', data);
+        router.push('/');
+      } catch (error) {
+        console.error('Error adding user:', error);
+        // Handle error (display error message, retry logic, etc.)
+      }
     }
   }
   return (
@@ -45,7 +73,7 @@ const contact = () => {
                 <div className={Contactstyles.col}>
                   <div className={Contactstyles.formgroup}>
                     <label>Surname</label>
-                    <input type="text" name='lastname' />
+                    <input type="text" name='lastname' value={surname} onChange={(e) => handleOnchangeSurname(e)} />
                   </div>
                 </div>
 
@@ -66,7 +94,7 @@ const contact = () => {
                 <div className={Contactstyles.col}>
                   <div className={Contactstyles.formgroup}>
                     <label>Message</label>
-                    <textarea></textarea>
+                    <textarea value={message} onChange={(e) => handleOnchangeMessage(e)}></textarea>
                   </div>
                 </div>
 
