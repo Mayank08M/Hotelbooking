@@ -22,6 +22,11 @@ const navbarTabs = [
     id: 4,
     item: 'Cities',
     route: 'city'
+  },
+  {
+    id: 5,
+    item: 'List Hotel',
+    route: 'listyourhotellogin'
   }
 ]
 

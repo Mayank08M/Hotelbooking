@@ -1,0 +1,33 @@
+.topdiv{
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 85px;
+    background-color: #2243b6;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+        margin: auto;
+    }
+}
+.para{
+    padding: 4rem;
+    @media screen and (max-width: 1200px) {
+    padding: 15px;
+    margin: 0;
+    }
+}
+
+.formdiv{
+    width: 24%;
+    margin: auto;
+    padding-top: 2rem;
+    max-width: 500px;
+    @media screen and (max-width: 1200px) {
+        width: 90%;
+        margin: auto;
+    }
+}
