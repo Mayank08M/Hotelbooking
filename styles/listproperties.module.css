@@ -1,0 +1,157 @@
+.backgrounddiv{
+    align-items: center;
+    background-image: url("https://media.istockphoto.com/id/940404500/vector/simple-world-map-vector-illustration.jpg?s=612x612&w=0&k=20&c=0oCYwdoQwBbJFsKRQbErvWW5oikBtX8MZc4ViPio5HE=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.uppermaindiv{
+    width: 80%;
+    margin: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    @media screen and (max-width: 1200px) {
+        width: 80%;
+    }
+
+}
+
+.headingpara{
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 4rem 4rem 4rem 0;
+    @media screen and (max-width: 1200px) {
+        margin: 0;
+        padding: 0;
+        width: 90%;
+        font-size: 1.5rem;
+    }
+}
+.griddiv{
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem;
+    @media screen and (max-width: 1200px) {
+        display: block;
+        margin: 0; 
+    }
+}
+.cardsdiv{
+    width: 100%;
+}
+.text{
+    padding-right: 10rem;
+    @media screen and (max-width: 1200px) {
+        padding-right: 5px;
+    }
+}
+.number{
+    font-size: 55px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 0;
+    margin-bottom: 10px;
+    @media screen and (max-width: 1200px) {
+        font-size: 40px; 
+        margin-top: 25px;
+    }
+
+}
+.maindiv{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    @media screen and (max-width: 1200px) {
+        display: block;
+        width: 90%;
+    }
+}
+.textcontainer{
+    width: 70%;
+}
+.leftdiv{
+    width: 90%;
+    @media screen and (max-width: 1200px) {
+        width: 90%;
+    }
+}
+.ticksdiv{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.textarea{
+    margin-left: 20px;
+    width: 80%;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.ticksmaindiv{
+    width: 90%;
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+    }
+}
+.textdiv{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.ticktext{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.phoneuserimg{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+    }
+}
+
+.midcontent{
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    @media screen and (max-width: 1200px) {
+        display: block;
+    }
+}
+
+/* .midcontentpart2{
+    margin-left: 70rem;
+} */
+.midpara{
+    margin-right: 10rem;
+}
+
+.midcontentpart1{
+    margin-left: 18rem;
+    width: 50%;
+    @media screen and (max-width: 1200px) {
+        margin: auto;
+        width: 90%;
+    }
+}
+
+.belowtextelements{
+    width: 95%;
+    @media screen and (max-width: 1200px) {
+        margin: auto;
+        width: 90%;
+    }
+}
+
+.phoneuserimgmid{
+    margin-top: 8rem;
+        margin: auto;
+        height: 40px;
+        margin-right: 45rem;
+    
+}
