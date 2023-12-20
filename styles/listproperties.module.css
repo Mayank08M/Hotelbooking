@@ -66,6 +66,7 @@
     margin: auto;
     padding-top: 4rem;
     padding-bottom: 4rem;
+    align-items: center;
     @media screen and (max-width: 1200px) {
         display: block;
         width: 90%;
@@ -83,7 +84,7 @@
 .ticksdiv{
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .textarea{
     margin-left: 20px;
@@ -119,9 +120,16 @@
     display: flex;
     justify-content: space-between;
     background-color: whitesmoke;
+    align-items: center;
     @media screen and (max-width: 1200px) {
         display: block;
     }
+}
+.secondimg{
+    margin: auto;
+    height: 500px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 /* .midcontentpart2{
@@ -132,8 +140,7 @@
 }
 
 .midcontentpart1{
-    margin-left: 18rem;
-    width: 50%;
+    width: 70%;
     @media screen and (max-width: 1200px) {
         margin: auto;
         width: 90%;

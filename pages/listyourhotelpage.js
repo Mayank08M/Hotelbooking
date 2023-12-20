@@ -68,7 +68,7 @@ const listproperty = () => {
         <div className={styles.midcontent}>
           <div className={styles.midcontentpart1}>
           <div className={styles.phoneuserimg}>
-              <Image src={PhoneUser1} width={550} height={400}/>
+              <Image src={PhoneUser1} className={styles.secondimg} width={550} height={400}/>
             </div>
           </div>
           <div className={styles.midcontentpart2}>
