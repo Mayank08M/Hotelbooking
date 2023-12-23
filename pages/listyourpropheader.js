@@ -1,8 +1,13 @@
 import React from "react";
-
 import { FaArrowRight } from "react-icons/fa";
+import { useRouter } from "next/router";
 
 const ListYourProperty = () => {
+  const router = useRouter();
+
+  function handleroute() {
+    router.push("/listyourhotellogin");
+  }
   return (
     <>
       <header
@@ -109,11 +114,11 @@ const ListYourProperty = () => {
                 backgroundColor: "white",
                 padding: "1rem",
                 borderRadius: "3px",
-                width: "50%",
-                height: "27rem",
+                width: "90%",
+                height: "35rem",
               }}
             >
-              <div style={{}}>
+              <div>
                 <h4>Earn more with consistent booking</h4>
                 <ul style={{ listStyleType: "none" }}>
                   <li
@@ -177,16 +182,9 @@ const ListYourProperty = () => {
                     Registration is free and takes 15 minutes
                   </li>
                 </ul>
-                <div style={{ marginBottom: "5rem" }}></div>
                 <hr></hr>
                 <div
-                  style={{
-                    backgroundColor: "#1E90FF",
-                    justifyContent: "center",
-                    display: "flex",
-                    marginTop: "-42px",
-                  }}
-                >
+                ><button onClick={()=> router.push("/listyourhotellogin")} style={{cursor:"pointer",backgroundColor: "#1E90FF",}}>
                   <a
                     style={{
                       color: "white",
@@ -198,6 +196,7 @@ const ListYourProperty = () => {
                       <FaArrowRight />
                     </span>
                   </a>
+                  </button>
                 </div>
                 <hr></hr>
                 <div style={{ marginTop: "50px" }}>

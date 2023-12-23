@@ -5,7 +5,6 @@ import PhoneUser from '../public/phoneusing.jpg'
 import PhoneUser1 from '../public/phoneusing1.jpg'
 import { FaRegCheckCircle } from "react-icons/fa";
 import Header from '../pages/listyourpropheader.js'
-import Footer from '../pages/listyourpropfooter.js'
 
 
 const listproperty = () => {
@@ -93,7 +92,6 @@ const listproperty = () => {
 
         </div>
       </div>
-      <Footer/>
     </div>
   )
 }
