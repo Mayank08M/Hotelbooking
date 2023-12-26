@@ -6,11 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 function MyApp({Component, pageProps}){
     return (
         <>
-       
-       
       <Navbar/>
-    
-
     <Component{...pageProps} />
     <Footer/>
     </>

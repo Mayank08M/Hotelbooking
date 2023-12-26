@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
 import styles from '../styles/Listprop.module.css'
 
 const listyourproperty = () => {
