@@ -1,83 +1,63 @@
 import React from "react";
-import { FaArrowRight } from "react-icons/fa";
+import styled from "../styles/header.module.css";
 import { useRouter } from "next/router";
+import { FaArrowRight } from "react-icons/fa";
 
 const ListYourProperty = () => {
   const router = useRouter();
-
-  function handleroute() {
-    router.push("/listyourhotellogin");
-  }
+  // function handleroute() {
+  //   router.push("/listyourproperty");
+  // }
   return (
     <>
-      <header
-        style={{
-          backgroundColor: "#003580",
-          width: "100%",
-          display: "flex",
-          justifyContent: "center",
-          height: "40rem",
-        }}
-      >
-        <div style={{ width: "60%" }}>
-          <div style={{ display: "flex", justifyContent: "space-between" }}>
+      <header className={styled.header}>
+        <div className={styled.wid}>
+          <div className={styled.dis}>
             <div>
-              <p
-                style={{
-                  fontSize: "25px",
-                  marginBottom: "2px",
-                  color: "white",
-                  fontFamily: " Rethink Sans, sans-serif",
-                }}
-              >
-                Booking.com
-              </p>
+              <p className={styled.mainpara}>Booking.com</p>
               <p
                 style={{
                   backgroundColor: "green",
                   marginTop: "0px",
                   color: "white",
+                  marginTop: "1rem",
                 }}
               >
                 Join 29,369,760 other listings already on Booking.com
               </p>
             </div>
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                width: "32%",
-              }}
-            >
-              <div style={{ marginTop: "14px" }}>
+            <div className={styled.join}>
+              <div className={styled.pddtop}>
                 <img
                   style={{ borderRadius: "50%", width: "40px", height: "34px" }}
                   src="https://q-xx.bstatic.com/backend_static/common/flags/new/48/gb.png"
                 ></img>
               </div>
-              <div>
-                <p style={{ color: "white", marginTop: "20px" }}>
+              <div className={styled.pddtop}>
+                <p style={{ color: "white", marginTop: "10px" }}>
                   Already a partner?
                 </p>
               </div>
-              <div style={{ paddingTop: "15px" }}>
+              <div className={styled.pddtop}>
                 <button
                   style={{
                     backgroundColor: "darkblue",
                     color: "white",
                     padding: "8px",
                     border: "1px solid white",
+                    cursor: "pointer",
                   }}
                 >
                   Sign in
                 </button>
               </div>
-              <div style={{ paddingTop: "15px" }}>
+              <div className={styled.pddtop}>
                 <button
                   style={{
                     backgroundColor: "	#00BFFF",
                     color: "white",
                     padding: "8px",
+                    cursor: "pointer",
                   }}
                 >
                   Help
@@ -87,39 +67,30 @@ const ListYourProperty = () => {
           </div>
 
           {/* second section */}
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              marginTop: "50px",
-            }}
-          >
-            <div style={{ fontFamily: "sans-serif", marginTop: "120px" }}>
+          <div className={styled.second}>
+            <div className={styled.ff}>
               {" "}
-              <div style={{ color: "white" }}>
+              <div style={{ color: "white" }} className={styled.wht}>
                 <b style={{ fontSize: "45px" }}>List your</b> <br></br>
                 <b style={{ fontSize: "45px", color: "#00BFFF" }}>Anything</b>
                 <br></br>
                 <b style={{ fontSize: "45px" }}>on Hourly web</b>
                 <br></br>
-                <p style={{ textDecoration: "bolder" }}>
+                <p
+                  style={{
+                    textDecoration: "bolder",
+                    marginTop: "1rem",
+                  }}
+                >
                   Whether hosting is your side passion or full-time job,
                   register your holiday rental on Booking.com to reach
                   travellers worldwide
                 </p>
               </div>
             </div>
-            <div
-              style={{
-                backgroundColor: "white",
-                padding: "1rem",
-                borderRadius: "3px",
-                width: "90%",
-                height: "35rem",
-              }}
-            >
-              <div>
-                <h4>Earn more with consistent booking</h4>
+            <div className={styled.bg}>
+              <div style={{}}>
+                <p>Earn more with consistent booking</p>
                 <ul style={{ listStyleType: "none" }}>
                   <li
                     style={{
@@ -182,10 +153,11 @@ const ListYourProperty = () => {
                     Registration is free and takes 15 minutes
                   </li>
                 </ul>
+                <div style={{ marginBottom: "5rem" }}></div>
                 <hr></hr>
-                <div
-                ><button onClick={()=> router.push("/listyourhotellogin")} style={{cursor:"pointer",backgroundColor: "#1E90FF",}}>
+                <div className={styled.regis}>
                   <a
+                    onClick={() => router.push("/listyourproperty")}
                     style={{
                       color: "white",
                       padding: "12px",
@@ -196,10 +168,9 @@ const ListYourProperty = () => {
                       <FaArrowRight />
                     </span>
                   </a>
-                  </button>
                 </div>
-                <hr></hr>
-                <div style={{ marginTop: "50px" }}>
+                <hr />
+                <div className={styled.we}>
                   <p>
                     <b style={{ marginTop: "350px" }}>
                       Already started a registration?
