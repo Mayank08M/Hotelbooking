@@ -139,3 +139,14 @@
     opacity: 1;
     right: 10px;
   }
+  @media screen and (max-width: 900px){
+    .footer{
+        width: 100%;
+    }
+    /* .fbottom{
+        display: block;
+    } */
+    .topall{
+        display: block;
+    }
+  }

@@ -115,6 +115,9 @@
   }
   
   @media screen and (max-width: 900px) {
+    .body{
+      width: 100%;
+    }
     .card .row {
       grid-template-columns: repeat(auto-fit,minmax(70%, 1fr));
     }
