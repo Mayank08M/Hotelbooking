@@ -17,10 +17,33 @@
 .navimg{
   cursor: pointer;
 }
+.mainnav{
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 70px;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  @media screen and (max-width: 900px){
+    display: block;
+    font-size: 10px;
+  }
+}
+.searchbox{
+  @media screen and (max-width: 900px){
+    margin-left: 30%;
+  }
+}
 .search{
   border: 1px solid grey;
   padding: 5px;
   border-radius: 10px;
+  @media screen and (max-width: 900px){
+    margin: auto;
+  }
 }
 
 
@@ -49,6 +72,20 @@
 }
 .navpdiv{
   padding-left: 10px;
+  @media screen and (max-width: 900px){
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
+.belowmaindiv{
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  flex-direction: row;
+  @media screen and (max-width: 900px){
+    margin-bottom: 1rem;
+    background-color: transparent;
+  }
 }
 .navlink:hover{
   transition: 0.5;
@@ -61,12 +98,14 @@
   margin: 0 0 1rem;
   line-height: 1.15;
   font-size: 3.6rem;
+  text-align: center;
   display: flex;
+  @media screen and (max-width: 900px){
+    display: block;
+    justify-content: space-between;
+  }
 }
 
-.title {
-  text-align: center;
-}
 
 .title,
 .description {
@@ -149,6 +188,10 @@
 
 .logo {
   height: 1em;
+  @media screen and (max-width: 900px){
+    margin-top: 1rem;
+    margin-left: 28%;
+  }
 }
 .topnav ul{
   display: flex;

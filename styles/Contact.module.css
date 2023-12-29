@@ -24,6 +24,9 @@
     border-radius: 50px;
     position: relative;
     margin: 10rem;
+    @media screen and (max-width: 900px){
+      margin: 4rem;
+    }
   }
   
   .card h2 {

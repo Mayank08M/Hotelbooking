@@ -43,8 +43,8 @@ const Navbar = () => {
 
   return (
     <>
-      <div style={{ paddingLeft:20,paddingRight:20,height: 70, backgroundColor: "#fff",width: "100%", display:"flex", justifyContent:"space-between", alignItems:"center" , borderBottom:"1px solid gray", }}>
-        <div style={{ display: "flex", alignItems: "center", backgroundColor:"#fff"  , flexDirection:"row"}}>
+      <div className={styles.mainnav}>
+        <div className={styles.belowmaindiv}>
           <div>      
                 <img className={styles.navimg} onClick={handleRedirectToHomepge} src='/hor.png' style={{ height: 40, width: 100 }} />
           </div>
@@ -58,7 +58,9 @@ const Navbar = () => {
             )
           })}
         </div>
+        <div className={styles.searchbox}>
         <input className={styles.search} placeholder='Search for hotels or Cities' />
+        </div>
       </div>
     </>
   )
