@@ -13,6 +13,9 @@
     grid-template-columns: auto auto auto;
     gap: 1rem;
     padding: 10px;
+    @media screen and (max-width: 900px){
+        display: block;
+      }
 
 }
 .price{
@@ -26,6 +29,10 @@
     box-sizing: border-box;
     border-width: 0;
     border: 2px solid #e5e7eb;
+    @media screen and (max-width: 900px){
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
 }
 .maindiv:hover{
     transform: scale(1.03);
