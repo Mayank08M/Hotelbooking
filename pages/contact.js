@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Contactstyles from '../styles/Contact.module.css';
 import { useRouter } from 'next/router';
+import Navbar from '../components/Navbar'
+import Footer from '../pages/Footer'
 
 const contact = () => {
   const router = useRouter();
@@ -55,7 +57,7 @@ const contact = () => {
   }
   return (
     <>
-
+      <Navbar/>
       <div className={Contactstyles.body}>
         <div className={Contactstyles.upbody}>
           <div className={Contactstyles.container}>
@@ -106,7 +108,7 @@ const contact = () => {
           </div>
         </div>
       </div>
-
+      <Footer/>
     </>
   )
 }

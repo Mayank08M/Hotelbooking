@@ -1,8 +1,12 @@
 import React from 'react'
 import Aboutstyles from '../styles/About.module.css'
+import Navbar from '../components/Navbar'
+import Footer from '../pages/Footer'
 
 const about = () => {
   return (
+    <>
+    <Navbar/>
     <div className={Aboutstyles.container}>
       <section className={Aboutstyles.about}>
         <h1>About Us</h1>
@@ -60,6 +64,8 @@ const about = () => {
     </section>
 
     </div>
+    <Footer/>
+    </>
   )
 }
 

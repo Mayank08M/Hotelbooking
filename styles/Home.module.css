@@ -34,16 +34,13 @@
 }
 .searchbox{
   @media screen and (max-width: 900px){
-    margin-left: 30%;
+    margin-left: 25%;
   }
 }
 .search{
   border: 1px solid grey;
   padding: 5px;
   border-radius: 10px;
-  @media screen and (max-width: 900px){
-    margin: auto;
-  }
 }
 
 

@@ -4,11 +4,14 @@ import Image from 'next/image'
 import PhoneUser from '../public/phoneusing.jpg'
 import PhoneUser1 from '../public/phoneusing1.jpg'
 import { FaRegCheckCircle } from "react-icons/fa";
+import Navbar from '../components/Navbar'
+import Footer from '../pages/Footer'
 
 
 const listproperty = () => {
   return (
     <div>
+      <Navbar/>
       <div className={styles.backgrounddiv}>
         <div className={styles.uppermaindiv}>
           <div>
@@ -90,6 +93,7 @@ const listproperty = () => {
 
         </div>
       </div>
+      <Footer/>
     </div>
   )
 }

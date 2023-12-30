@@ -1,10 +1,13 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Navbar from '../components/Navbar'
+import Footer from '../pages/Footer'
 
 export default function Home() {
   return (
     <>
+    <Navbar/>
     <div className={styles.container}>
       <Head>
         <title>Hourlyrooms
@@ -119,6 +122,7 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
+      <Footer/>
     </>
   );
 }

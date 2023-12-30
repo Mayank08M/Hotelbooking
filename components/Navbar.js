@@ -1,6 +1,7 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import styles from '../styles/Home.module.css'
 import { useRouter } from 'next/router'
+import axios from 'axios';
 
 const navbarTabs = [
   {
@@ -31,6 +32,8 @@ const navbarTabs = [
 ]
 
 const Navbar = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [suggestions, setSuggestions] = useState([]);
   let router = useRouter();
 
   function handleRedirectToHomepge() {
@@ -40,6 +43,21 @@ const Navbar = () => {
   function handleRedirectToTabs(tabs) {
     router.push(`/${tabs}`)
   }
+  const fetchSuggestions = async (term) => {
+    try {
+      const response = await axios.get(`/suggestions/${term}`);
+      setSuggestions(response.data);
+    } catch (error) {
+      console.error('Error fetching suggestions:', error);
+    }
+  };
+  useEffect(() => {
+    if (searchTerm.trim() !== '') {
+      fetchSuggestions(searchTerm);
+    } else {
+      setSuggestions([]); // Clear suggestions if search term is empty
+    }
+  }, [searchTerm]);
 
   return (
     <>
@@ -59,7 +77,19 @@ const Navbar = () => {
           })}
         </div>
         <div className={styles.searchbox}>
-        <input className={styles.search} placeholder='Search for hotels or Cities' />
+        <input className={styles.search} placeholder='Search for hotels or Cities' value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}/>
+            <ul>
+            
+
+
+            {suggestions?.map((suggestion)=>{
+              console.log(suggestion, 'jkjhjkjkj');
+              return(
+                <li key={suggestion._id}>{suggestion.term}</li>
+              )
+            })}
+          </ul>
         </div>
       </div>
     </>

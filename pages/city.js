@@ -2,9 +2,13 @@ import React from 'react'
 import styles from '../styles/Home.module.css'
 import hotelsData from '../components/hotelsData.json'
 import Hotelstyles from '../styles/Hotels.module.css'
+import Navbar from '../components/Navbar'
+import Footer from '../pages/Footer'
 
 const city = () => {
   return (
+    <>
+    <Navbar/>
     <div className={styles.container}>
       <div className={Hotelstyles.topdiv}>
       
@@ -33,7 +37,8 @@ const city = () => {
         })}
         </div>
     </div>
-    
+    <Footer/>
+    </>
     
   )
 }

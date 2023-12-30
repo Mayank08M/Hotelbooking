@@ -1,9 +1,11 @@
 import React from 'react'
 import styles from '../styles/Listprop.module.css'
 
+
 const listyourproperty = () => {
     return (
         <div>
+            
             <div style={{ marginTop: "4rem" }}>
                 <h3 style={{ textAlign: "center", fontWeight: "bold", fontSize: "20px", fontFamily: "sans-serif" }}>Sign in to manage your property</h3>
                 <div className={styles.formdiv}>

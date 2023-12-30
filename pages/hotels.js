@@ -3,6 +3,8 @@ import styles from '../styles/Home.module.css'
 import Hotelstyles from '../styles/Hotels.module.css'
 import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
+import Navbar from '../components/Navbar'
+import Footer from '../pages/Footer'
 import axios from 'axios'
 
 const baseURL = 'http://localhost:8000'
@@ -22,7 +24,10 @@ useEffect(() => {
   const router = useRouter();
 
   return (
+    <>
+    <Navbar/>
     <div className={styles.container}>
+      
       <div className={Hotelstyles.topdiv}>
       
 
@@ -47,6 +52,8 @@ useEffect(() => {
         })}
         </div>
     </div>
+    <Footer/>
+    </>
 
   )
 }
