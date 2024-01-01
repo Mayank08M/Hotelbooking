@@ -9,7 +9,7 @@ const city = () => {
   return (
     <>
     <Navbar/>
-    <div className={styles.container}>
+    <div className={Hotelstyles.container}>
       <div className={Hotelstyles.topdiv}>
       
 

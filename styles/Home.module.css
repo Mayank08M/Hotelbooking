@@ -16,6 +16,9 @@
 }
 .navimg{
   cursor: pointer;
+  @media screen and (max-width: 900px){
+    padding-left: 10px;
+  }
 }
 .mainnav{
   padding-left: 20px;
@@ -30,6 +33,8 @@
   @media screen and (max-width: 900px){
     display: block;
     font-size: 10px;
+    padding: 0;
+    border: none;
   }
 }
 .searchbox{
@@ -80,7 +85,10 @@
   background-color: #fff;
   flex-direction: row;
   @media screen and (max-width: 900px){
-    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.2rem;
+    margin-top: 0.5rem;
     background-color: transparent;
   }
 }
@@ -209,10 +217,17 @@
 .topnav ul li{
   list-style: none;
 }
-.listsearch{
+/* .listsearch{
   margin-bottom: 7px;
   border: 1px solid rgba(0, 0, 0, 0.25) !important;
   padding: 5px 40px 5px 15px;
+} */
+.refer{
+  text-decoration: none;
+  color: rgb(211, 51, 51);
+}
+.refer:hover{
+  color: red;
 }
 .navlogo{
   display: flex;
@@ -222,7 +237,7 @@
   margin-top: 5px;
   cursor: pointer;
 }
-.topnav input[type=text]{
+/* .topnav input[type=text]{
   float: right;
   padding: 6px;
   margin-top: 8px;
@@ -230,6 +245,22 @@
   border: none;
   font-size: 17px;
   border-radius: 20px;
+} */
+.header{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  position: relative;
+}
+.navBtn{
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: black;
+  visibility: hidden;
+  opacity: 0;
 }
 
 @media (max-width: 600px) {
@@ -238,11 +269,20 @@
     flex-direction: column;
     margin-bottom: 5rem;
   }
-}
-.refer{
-  text-decoration: none;
-  color: rgb(211, 51, 51);
-}
-.refer:hover{
-  color: red;
+  .navBtn{
+    visibility: visible;
+    opacity: 1;
+  }
+  .navCloseBtn{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+  .invisible{
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+
+  }
+
 }

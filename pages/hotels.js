@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from '../styles/Home.module.css'
 import Hotelstyles from '../styles/Hotels.module.css'
 import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
@@ -26,7 +25,7 @@ useEffect(() => {
   return (
     <>
     <Navbar/>
-    <div className={styles.container}>
+    <div className={Hotelstyles.container}>
       
       <div className={Hotelstyles.topdiv}>
       
