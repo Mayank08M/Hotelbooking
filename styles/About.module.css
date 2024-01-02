@@ -8,6 +8,9 @@
     background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(248, 101, 101) 100%); */
     padding: 100px 0 20px 0;
     text-align: center;
+    @media screen and (max-width: 900px){
+        padding-top: 35px;
+      }
 }
 .paradiv{
     margin-left: 5rem;
