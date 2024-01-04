@@ -1,45 +1,138 @@
-import React from 'react'
-import styles from '../styles/Home.module.css'
+import React, { useState } from 'react'
+import { useEffect } from 'react';
+import { FaAngleRight } from "react-icons/fa6";
+import styles from '../styles/City.module.css'
 import hotelsData from '../components/hotelsData.json'
 import Hotelstyles from '../styles/Hotels.module.css'
 import Navbar from '../components/Navbar'
 import Footer from '../pages/Footer'
+import Adv from '../public/ad2.jpg'
 
 const city = () => {
+  const imgs = [
+    {
+      id:0,
+      value:{Adv}
+    },
+    {
+      id:1,
+      value:"https://upload.wikimedia.org/wikipedia/commons/7/76/BAHU_FORT_JAMMU_%26_KASHMIR_2.jpg"
+    }
+  ];
+  const [sliderData, setSliderData] = useState(imgs[0]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const nextIndex = (currentIndex + 1) % imgs.length;
+      setSliderData(imgs[nextIndex]);
+      setCurrentIndex(nextIndex);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, [currentIndex, imgs]);
+
+  const handleClick = (index) => {
+    setSliderData(imgs[index]);
+    setCurrentIndex(index);
+  };
   return (
     <>
-    <Navbar/>
-    <div className={Hotelstyles.container}>
-      <div className={Hotelstyles.topdiv}>
-      
-
-        {hotelsData?.map((hotel)=>{
-          return(
-            <div className={Hotelstyles.maindiv} key={hotel.id}>
-            <img className="w-full" src={hotel.image} alt="Mountain"/>
-            <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2">{hotel.name}</div>
-              <p className="text-gray-700 text-base">
-              {hotel.location}
-              </p>
-              <p className="text-gray-700 text-base font-bold">
-              {hotel.city}
-              </p>
-              <div className={Hotelstyles.price}>{hotel.price}</div>
-            </div>
-            <div className="px-6 pt-4 pb-2">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{hotel.tag1}</span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{hotel.tag2}</span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{hotel.tag3}</span>
-          </div>
-            </div>
-          )
-        })}
-        </div>
+    <div>
+      <div className={styles.slider}>
+        <img className={styles.thumbnail} src={sliderData.value} height={300} width={500} />
+        {
+          imgs.map((data, i)=>
+          <img className={styles.smallcrousel} key={data.id} src={data.value} onClick={()=> handleClick(i)} height={70} width={100}/>)
+        }
+      </div>
     </div>
-    <Footer/>
+      <div>
+        <h3 style={{ textAlign: "center", marginTop: "2rem", fontFamily: "sans-serif", fontWeight: "bold" }}>Overheard from Media</h3>
+        <div>
+          <div className={styles.maincarddiv}>
+          <div className={styles.card}>
+            <div className={styles.innercard}>
+            <div className={styles.cardheader}>"</div>
+            <div className={styles.cardcontent}>
+              <p>Introducing hotel booking ka chota recharge Hourly Rooms</p>
+            </div>
+            <div><img className={styles.logoimg} src='https://e7.pngegg.com/pngimages/486/101/png-clipart-apptrailers-dailyhunt-india-mobile-phones-india-text-rectangle.png'></img></div>
+            <div className={styles.cardfooter}>
+              <a href="#" className={styles.btn}>Read Full Article<FaAngleRight /></a>
+            </div>
+            </div>
+        <div className={styles.hr}></div>
+        </div>
+        <div className={styles.card}>
+            <div className={styles.innercard}>
+            <div className={styles.cardheader}>"</div>
+            <div className={styles.cardcontent}>
+              <p>Introducing hotel booking ka chota recharge Hourly Rooms</p>
+            </div>
+            <div><img className={styles.logoimg} src='https://e7.pngegg.com/pngimages/486/101/png-clipart-apptrailers-dailyhunt-india-mobile-phones-india-text-rectangle.png'></img></div>
+            <div className={styles.cardfooter}>
+              <a href="#" className={styles.btn}>Read Full Article<FaAngleRight /></a>
+            </div>
+            </div>
+        <div className={styles.hr}></div>
+        </div>
+        <div className={styles.card}>
+            <div className={styles.innercard}>
+            <div className={styles.cardheader}>"</div>
+            <div className={styles.cardcontent}>
+              <p>Introducing hotel booking ka chota recharge Hourly Rooms</p>
+            </div>
+            <div><img className={styles.logoimg} src='https://e7.pngegg.com/pngimages/486/101/png-clipart-apptrailers-dailyhunt-india-mobile-phones-india-text-rectangle.png'></img></div>
+            <div className={styles.cardfooter}>
+              <a href="#" className={styles.btn}>Read Full Article<FaAngleRight /></a>
+            </div>
+            </div>
+        <div className={styles.hr}></div>
+        </div>
+        <div className={styles.card}>
+            <div className={styles.innercard}>
+            <div className={styles.cardheader}>"</div>
+            <div className={styles.cardcontent}>
+              <p>Introducing hotel booking ka chota recharge Hourly Rooms</p>
+            </div>
+            <div><img className={styles.logoimg} src='https://e7.pngegg.com/pngimages/486/101/png-clipart-apptrailers-dailyhunt-india-mobile-phones-india-text-rectangle.png'></img></div>
+            <div className={styles.cardfooter}>
+              <a href="#" className={styles.btn}>Read Full Article<FaAngleRight /></a>
+            </div>
+            </div>
+        <div className={styles.hr}></div>
+        </div>
+        <div className={styles.card}>
+            <div className={styles.innercard}>
+            <div className={styles.cardheader}>"</div>
+            <div className={styles.cardcontent}>
+              <p>Introducing hotel booking ka chota recharge Hourly Rooms</p>
+            </div>
+            <div><img className={styles.logoimg} src='https://e7.pngegg.com/pngimages/486/101/png-clipart-apptrailers-dailyhunt-india-mobile-phones-india-text-rectangle.png'></img></div>
+            <div className={styles.cardfooter}>
+              <a href="#" className={styles.btn}>Read Full Article<FaAngleRight /></a>
+            </div>
+            </div>
+        <div className={styles.hr}></div>
+        </div>
+        <div className={styles.card}>
+            <div className={styles.innercard}>
+            <div className={styles.cardheader}>"</div>
+            <div className={styles.cardcontent}>
+              <p>Introducing hotel booking ka chota recharge Hourly Rooms</p>
+            </div>
+            <div><img className={styles.logoimg} src='https://e7.pngegg.com/pngimages/486/101/png-clipart-apptrailers-dailyhunt-india-mobile-phones-india-text-rectangle.png'></img></div>
+            <div className={styles.cardfooter}>
+              <a href="#" className={styles.btn}>Read Full Article<FaAngleRight /></a>
+            </div>
+            </div>
+        <div className={styles.hr}></div>
+        </div>
+          </div>
+        </div>
+      </div>
     </>
-    
+
   )
 }
 
