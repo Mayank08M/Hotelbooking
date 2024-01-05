@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tangsa:wght@500&family=Poppins&display=swap');
+
+
+.body{
+    font-family: 'Poppins', sans-serif;
+}
 .maincarddiv{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -6,6 +12,117 @@
     margin-left: 12rem;
     margin-right: 12rem;
     margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.hotelcardsmaindiv{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    height: 440px;
+}
+.hotelcardsheader{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+.hotelscard{
+    border-radius: 10px;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 2rem;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.hotelimagediv img{
+    height: 45%;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.hotelimagediv p{
+    background-color: #FF1818;
+    font-weight: 600;
+    width: 40%;
+    position: absolute;
+    top:5%;
+    left: 0px ;
+    z-index: 1000;
+    padding-left: 5px;
+    color: white;
+}
+.ratingdiv{
+    display: flex;
+    margin-left: 64%;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #ff6c09;
+    font-size: 12px;
+}
+.rating{
+    background-color: #FF6C09;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    text-align: center;
+    margin-right: 5px;
+    font-weight: 400;
+    color: white;
+}
+.hoteldata{
+    margin-left: 10px;
+}
+.hotelname{
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 0;
+}
+.hoteladdress{
+    margin-bottom: 0;
+}
+.starimg{
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+}
+.ogprice{
+    font-size: 25px;
+    font-weight: bold; 
+    position: relative;
+}
+.cutprice{
+    background-color: red;
+    width: 75px;
+    height: 1.5px;
+    margin-top: 2px;
+    transform: rotate(-10deg);
+    position: absolute;
+    top: 12px;
+}
+.discountedprice{
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+    align-items: baseline;
+    margin-right: 8px;
+    color: #FF1818;
+}
+.dphead{
+    font-size: 12px;
+    margin-right: 6px;
+}
+.dprice{
+    font-size: 25px;
+    font-weight: bold;
+}
+.mediahead{
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 4rem;
+    font-family: 'Poppins', sans-serif;
 }
 .card {
     width: 100%;
@@ -20,20 +137,22 @@
 .innercard{
     padding-right: 1.5rem;
     padding-left: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 /* Styles for card heading */
 .cardheader {
-    font-size: 24px;
-    font-weight: bold;
-    font-family: Poppins;
     font-size: 35px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
     font-style: italic;
     font-weight: 600;
-    /* line-height: 110px; */
+    color: #FF6C09;
     letter-spacing: 0em;
     text-align: left;
-
+    height: 30px;
 }
 
 .logoimg {
@@ -41,6 +160,7 @@
     height: 20px;
     width: 35px;
     margin-top: 5px;
+
 }
 
 /* Styles for card content */
@@ -48,7 +168,8 @@
     font-size: 20px;
     color: #333;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0;
 }
 
 /* Styles for card footer */
@@ -66,11 +187,11 @@
 
 /* Button styles */
 .btn {
-    padding-top: 33px;
+    padding-top: 40px;
     border: none;
     color: #FF6800;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     cursor: pointer;
     display: flex;

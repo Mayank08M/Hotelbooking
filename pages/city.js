@@ -6,17 +6,16 @@ import hotelsData from '../components/hotelsData.json'
 import Hotelstyles from '../styles/Hotels.module.css'
 import Navbar from '../components/Navbar'
 import Footer from '../pages/Footer'
-import Adv from '../public/ad2.jpg'
 
 const city = () => {
   const imgs = [
     {
       id:0,
-      value:{Adv}
+      value:"ad2.jpg"
     },
     {
       id:1,
-      value:"https://upload.wikimedia.org/wikipedia/commons/7/76/BAHU_FORT_JAMMU_%26_KASHMIR_2.jpg"
+      value:"offer.svg"
     }
   ];
   const [sliderData, setSliderData] = useState(imgs[0]);
@@ -37,17 +36,98 @@ const city = () => {
   };
   return (
     <>
+    <div className={styles.body}>
     <div>
       <div className={styles.slider}>
-        <img className={styles.thumbnail} src={sliderData.value} height={300} width={500} />
+        <img className={styles.thumbnail} src={sliderData.value} height={640} width={1728} />
         {
           imgs.map((data, i)=>
           <img className={styles.smallcrousel} key={data.id} src={data.value} onClick={()=> handleClick(i)} height={70} width={100}/>)
         }
       </div>
     </div>
+    <div>
+      <div className={styles.hotelcardsheader}>
+      <p>Recommended Rooms Nearby You</p>
+      </div>
+      <div className={styles.hotelcardsmaindiv}>
+      <div className={styles.hotelscard}>
+            <div className={styles.hotelimagediv}>
+              <img src="https://images.unsplash.com/photo-1625244724120-1fd1d34d00f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWxzfGVufDB8fDB8fHww"/>
+              <p>Premium Stays</p>
+              </div>
+            <div className={styles.ratingdiv}><div className={styles.rating}>3.5</div>Very Good</div>
+            <div className={styles.hoteldata}>
+              <p className={styles.hotelname}>The Star Hotel</p>
+              <p className={styles.hoteladdress}>Andheri East....</p>
+              <div className={styles.starimg}><img src="star.png" height={20} width={20}/><img src="star.png" height={20} width={20}/><img src="star.png" height={20} width={20}/></div>
+            </div>
+            <div style={{display:"flex", justifyContent:"flex-end", marginRight:"8px"}}>
+                <div style={{position:"relative"}}>
+                  <p style={{fontSize:"22px", fontWeight:"bold", color:"darkgrey" , padding:0, margin:0}}> ₹ 2677</p>
+                  <div className={styles.cutprice}>
+
+                  </div>
+                </div>
+                
+              </div>
+            <div className={styles.discountedprice}>
+              <p className={styles.dphead}>Starting from</p>
+              <p className={styles.dprice}>₹ 10,500</p>
+              </div>
+        </div>
+        <div className={styles.hotelscard}>
+        <div className={styles.hotelimagediv}>
+              <img src="https://images.unsplash.com/photo-1625244724120-1fd1d34d00f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWxzfGVufDB8fDB8fHww"/>
+              <p>Premium Stays</p>
+              </div>
+            <div className={styles.ratingdiv}><div className={styles.rating}>3.5</div>Very Good</div>
+            <div className={styles.hoteldata}>
+              <p className={styles.hotelname}>The Star Hotel</p>
+              <p className={styles.hoteladdress}>Andheri East....</p>
+              <div className={styles.starimg}><img src="star.png" height={20} width={20}/><img src="star.png" height={20} width={20}/><img src="star.png" height={20} width={20}/></div>
+            </div>
+            <div style={{display:"flex", justifyContent:"flex-end", marginRight:"8px"}}>
+                <div style={{position:"relative"}}>
+                  <p style={{fontSize:"22px", fontWeight:"bold", color:"darkgrey" , padding:0, margin:0}}> ₹ 2,677</p>
+                  <div className={styles.cutprice}>
+
+                  </div>
+                </div>
+                
+              </div>
+            <div className={styles.discountedprice}>
+              <p className={styles.dphead}>Starting from</p>
+              <p className={styles.dprice}>₹ 10,500</p>
+              </div>
+        </div>
+        <div className={styles.hotelscard}>
+            <div className={styles.hotelimagediv}>
+              <img src="https://images.unsplash.com/photo-1625244724120-1fd1d34d00f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWxzfGVufDB8fDB8fHww"/><p>Premium Stays</p></div>
+            <div className={styles.ratingdiv}><div className={styles.rating}>3.5</div>Very Good</div>
+            <div className={styles.hoteldata}>
+              <p className={styles.hotelname}>The Star Hotel</p>
+              <p className={styles.hoteladdress}>Andheri East....</p>
+              <div className={styles.starimg}><img src="star.png" height={20} width={20}/><img src="star.png" height={20} width={20}/><img src="star.png" height={20} width={20}/></div>
+            </div>
+            <div style={{display:"flex", justifyContent:"flex-end", marginRight:"8px"}}>
+                <div style={{position:"relative"}}>
+                  <p style={{fontSize:"22px", fontWeight:"bold", color:"darkgrey" , padding:0, margin:0}}> ₹ 2677</p>
+                  <div className={styles.cutprice}>
+
+                  </div>
+                </div>
+                
+              </div>
+            <div className={styles.discountedprice}>
+              <p className={styles.dphead}>Starting from</p>
+              <p className={styles.dprice}>₹ 10,500</p>
+              </div>
+        </div>
+      </div>
+    </div>
       <div>
-        <h3 style={{ textAlign: "center", marginTop: "2rem", fontFamily: "sans-serif", fontWeight: "bold" }}>Overheard from Media</h3>
+        <p className={styles.mediahead}>Overheard from Media</p>
         <div>
           <div className={styles.maincarddiv}>
           <div className={styles.card}>
@@ -130,6 +210,7 @@ const city = () => {
         </div>
           </div>
         </div>
+      </div>
       </div>
     </>
 
