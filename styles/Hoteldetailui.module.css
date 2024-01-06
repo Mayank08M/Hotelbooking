@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tangsa:wght@500&family=Poppins&display=swap');
+
+.body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav{
+    display: flex;
+    margin: 10px 10px;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.nav ul{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+.nav ul li{
+    margin: 10px;
+}
+.navbutton{
+    background-color: #FF6C09;
+    padding-left:18px;
+    padding-right: 18px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    margin-right: 3.5rem;
+}
+.searchinputs{
+    margin-left: 1rem;
+    margin-right: 5rem;
+    align-items: center;
+}
+.dropmaindiv{
+    display: flex;
+}
+/* .dropdown{
+    margin-right: 3rem;
+} */
+.dropdown label{
+    color: white;
+}
+.inputs::placeholder{
+    color: #FF6C09;
+    font-weight: bold;
+    padding-left: 5px;
+}
+.inputs{
+    background-color: #ffe3d1;
+    color: #FF6C09;
+    padding-left: 5px;
+    border-radius: 5px;
+    width: 90%;
+}
+.dropdownbutton{
+    align-items: center;
+    background-color: white;
+    color: #FF6C09;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 6px;
+    cursor: pointer;
+}
+.dropdownbutton button{
+    padding-top: 5px;
+    font-size: 20px;
+}
+.sortdiv{
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding-left: 1.5rem;
+}
+.buttons{
+    color: #FF6C09;
+    background-color: white;
+    border: 1px solid #FF6C09;
+    border-radius: 5px;
+    padding: 3px 10px;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+.buttons:hover{
+    background-color: #ffe3d1;
+    border: none;
+}
