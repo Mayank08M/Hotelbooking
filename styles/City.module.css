@@ -8,7 +8,6 @@
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 1.8rem;
-    /* margin: 10rem; */
     margin-left: 12rem;
     margin-right: 12rem;
     margin-top: 3rem;
@@ -17,14 +16,21 @@
 .hotelcardsmaindiv{
     display: flex;
     justify-content: space-between;
-    margin-left: 15rem;
-    margin-right: 15rem;
+    margin-left: 11rem;
+    margin-right: 11rem;
     height: 440px;
+    align-items: center;
 }
 .hotelcardsheader{
     font-size: 40px;
     text-align: center;
     font-weight: bold;
+}
+.arrowicon{
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 90px;
+    cursor: pointer;
 }
 .hotelscard{
     border-radius: 10px;
@@ -124,6 +130,13 @@
     margin-top: 4rem;
     font-family: 'Poppins', sans-serif;
 }
+.weoffer{
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 4rem;
+    font-family: 'Poppins', sans-serif;
+}
 .card {
     width: 100%;
     height: 230px;
@@ -211,4 +224,40 @@
     border: none;
     position: absolute;
     bottom: 0;
+}
+@media (max-width: 1200px) {
+    .thumbnail{
+        height: 240px;
+        width: 400vh;
+    }
+    .arrowicon{
+        width: 20%;
+        margin-left: 38%;
+        margin-top: 1rem;
+    }
+    .hotelcardsmaindiv{
+        display: block;
+        width: 90%;
+        margin-bottom: 2rem;
+        margin-left: 0.5rem;
+        height: 100vh;
+    }
+    .hotelcardsheader{
+        margin-left: 0.5rem;
+    }
+    .maincarddiv{
+        display: block;
+        width: 90%;
+        margin-left: 1rem;
+        margin-top: 2rem;
+        position: relative;
+    }
+    .card{
+        height: 35vh;
+        margin-top: 18px;
+    }
+    .mediahead{
+        margin-left: 2rem;
+        margin-top: 48rem;
+    }
 }

@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { useEffect } from 'react';
 import { FaAngleRight } from "react-icons/fa6";
 import styles from '../styles/City.module.css'
+import { FaChevronLeft } from "react-icons/fa";
+import { FaChevronRight } from "react-icons/fa";
 import hotelsData from '../components/hotelsData.json'
 import Hotelstyles from '../styles/Hotels.module.css'
 import Navbar from '../components/Navbar'
@@ -51,6 +53,9 @@ const city = () => {
       <p>Recommended Rooms Nearby You</p>
       </div>
       <div className={styles.hotelcardsmaindiv}>
+        <div className={styles.arrowicon}>
+        <FaChevronLeft style={{padding:"8px"}} size={60}/>
+        </div>
       <div className={styles.hotelscard}>
             <div className={styles.hotelimagediv}>
               <img src="https://images.unsplash.com/photo-1625244724120-1fd1d34d00f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWxzfGVufDB8fDB8fHww"/>
@@ -123,6 +128,9 @@ const city = () => {
               <p className={styles.dphead}>Starting from</p>
               <p className={styles.dprice}>₹ 10,500</p>
               </div>
+        </div>
+        <div className={styles.arrowicon}>
+        <FaChevronRight style={{padding:"8px"}} size={60}/>
         </div>
       </div>
     </div>
