@@ -35,9 +35,6 @@
 .dropmaindiv{
     display: flex;
 }
-/* .dropdown{
-    margin-right: 3rem;
-} */
 .dropdown label{
     color: white;
 }
@@ -88,4 +85,126 @@
 .buttons:hover{
     background-color: #ffe3d1;
     border: none;
+}
+.matchdiv{
+    display: flex;
+    padding: 10px 33px;
+    align-items: center;
+}
+.matchp{
+    display: flex;
+    align-items: center;
+    color: #FF6C09;
+}
+.filtermaindiv{
+    background-color: white;
+    width: 22%;
+    border-radius: 10px;
+    margin-left: 2rem;
+}
+.filterdiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid grey;
+}
+.popfdiv{
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+.popinput{
+    border-radius: 0px;
+    margin-right: 5px;
+}
+.poplabel{
+    font-size: 15px;
+}
+.ratebutton{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    /* border: 1px solid grey; */
+    border-radius: 5px;
+    padding: 2px 4px;
+}
+.ratingstar{
+    color: rgb(128, 128, 128);
+    font-size: 20px;
+    margin-left: 4px;
+}
+.ratingdiv{
+    display: flex;
+    margin-left: 15%;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #ff6c09;
+    font-size: 12px;
+    width: 50%;
+    align-items: center;
+}
+.rating{
+    background-color: #FF6C09;
+    border-radius: 10px;
+    padding: 2px 12px;
+    align-items: center;
+    text-align: center;
+    margin-right: 5px;
+    font-weight: 400;
+    color: white;
+}
+.smallcrousel{
+    display: flex;
+    flex-direction: row;
+}
+.hotelimagediv{
+    position: relative;
+    margin: 2rem;
+}
+.hotelimagediv p{
+    background-color: #FF1818;
+    font-weight: 600;
+    width: 40%;
+    position: absolute;
+    top:0%;
+    left: 0px ;
+    z-index: 1000;
+    padding-left: 5px;
+    color: white;
+}
+.hoteldata{
+    width: 50%;
+}
+.hoteladdress{
+    display: flex;
+    align-items: center;
+}
+.hotelname{
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.starimg{
+    display: flex;
+    margin-bottom: 5px;
+}
+.cutprice{
+    background-color: red;
+    width: 75px;
+    height: 1.5px;
+    margin-top: 2px;
+    transform: rotate(-10deg);
+    position: absolute;
+    top: 12px;
+}
+.pricesdiv{
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 10px;
+    padding: 7px 2rem;
+    cursor: pointer;
+    text-align: center;
+}
+.pricesdiv:hover{
+    background-color: rgb(202, 202, 202);
 }
