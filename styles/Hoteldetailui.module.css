@@ -207,4 +207,5 @@
 }
 .pricesdiv:hover{
     background-color: rgb(202, 202, 202);
+    border: none;
 }

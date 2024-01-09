@@ -20,6 +20,14 @@ const hoteldetailui = () => {
         {
             id: 1,
             value: "man1.jpg"
+        },
+        {
+            id: 2,
+            value: "man3.jpg"
+        },
+        {
+            id: 3,
+            value: "man1.jpg"
         }
     ];
     const [sliderData, setSliderData] = useState(imgs[0]);
@@ -166,7 +174,65 @@ const hoteldetailui = () => {
                             </div>
                         </div>
                         <div style={{ width: "77%" }}>
-                            <div style={{ display: "flex", marginLeft: "2rem", marginRight: "2rem", backgroundColor: "white", borderRadius: "10px", boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;", justifyContent: "space-between" }}>
+                            <div style={{ display: "flex", marginLeft: "2rem", marginRight: "2rem", backgroundColor: "white", borderRadius: "10px",marginBottom:"2rem", boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;", justifyContent: "space-between" }}>
+                                <div>
+                                    <div className={styles.hotelimagediv}>
+                                        <div className={styles.slider}>
+                                            <img className={styles.thumbnail} src={sliderData.value} height={800} width={400} />
+                                            <p>Premium Stays</p>
+                                        </div>
+                                        <div style={{display:"flex", justifyContent:"space-between"}}>
+                                        {
+                                            imgs.map((data, i) =>
+                                            <div style={{paddingRight:"15px", paddingTop:"15px"}}>
+                                                <img className={styles.smallcrousel} key={data.id} src={data.value} onClick={() => handleClick(i)} height={70} width={100} />
+                                                </div>)
+                                        }
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div style={{ margin: "2rem 2rem 2rem 0", justifyContent: "space-between", width: "60%" }}>
+                                    <div style={{ display: "flex" }}>
+                                        <div className={styles.hoteldata}>
+                                            <p className={styles.hotelname}>Hotel Golden Lawn</p>
+                                            <div className={styles.starimg}><img src="star.png" height={20} width={20} /><img src="star.png" height={20} width={20} /><img src="star.png" height={20} width={20} /></div>
+                                            <p className={styles.hoteladdress}><IoLocationSharp />Andheri East....</p>
+                                        </div>
+                                        <div className={styles.ratingdiv}><div className={styles.rating}>3.5</div>Very Good <p style={{ margin: "0 5px", color: "black" }}>( 8 Ratings )</p></div>
+                                    </div>
+                                    <div style={{ display: "flex", justifyContent: "space-between", margin: "0.5rem 7rem 0.5rem 0" }}>
+                                        <p style={{ display: "flex", alignItems: "center", color: "green", fontWeight: "bold" }}><PiCheckCircleLight style={{ marginRight: "5px", fontSize: "18px" }} />Couple Friendly</p>
+                                        <p style={{ display: "flex", alignItems: "center", fontWeight: "bold", color: "#FF6C09" }}><RxCrossCircled style={{ marginRight: "5px", fontSize: "18px" }} />Local ID not Accepted</p>
+                                        <p style={{ display: "flex", alignItems: "center", fontWeight: "bold", color: "green" }}><PiCheckCircleLight style={{ marginRight: "5px", fontSize: "18px" }} />Pay at Hotel</p>
+                                    </div>
+                                    <div style={{display:"flex", justifyContent:"space-between"}}>
+                                        <div style={{ display: "flex", justifyContent: "space-between" }}>
+                                            <p style={{marginRight:"2rem", marginBottom:"0"}}><LuParkingCircle style={{fontSize:"25px"}}/></p>
+                                            <p style={{marginRight:"2rem", marginBottom:"0"}}><TbAirConditioning style={{fontSize:"25px"}}/></p>
+                                            <p style={{marginRight:"2rem", marginBottom:"0"}}><FaSwimmingPool style={{fontSize:"25px"}}/></p>
+                                            <p style={{marginRight:"2rem", marginBottom:"0"}}>+7 more</p>
+                                        </div>
+                                        <div style={{display:"flex", alignItems:"baseline", marginTop:"2rem", marginRight:"4rem"}}>
+                                            <p style={{marginRight:"10px", marginBottom:"0"}}>Full Day</p>
+                                            <div style={{ position: "relative" }}>
+                                                <p style={{ fontSize: "22px", fontWeight: "bold", color: "darkgrey", padding: 0, margin: 0 }}> ₹ 2677</p>
+                                                <div className={styles.cutprice}>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style={{display:"flex", justifyContent:"space-between", marginTop:"1rem", width:"96%"}}>
+                                        <div className={styles.pricesdiv}><p style={{marginBottom:"0", fontSize:"25px", fontWeight:"bold"}}> ₹700</p><p style={{marginBottom:"0", color:"#FF6C09", fontWeight:"bold"}}>3HRS</p></div>
+                                        <div className={styles.pricesdiv}><p style={{marginBottom:"0", fontSize:"25px", fontWeight:"bold"}}>₹1200</p><p style={{marginBottom:"0", color:"#FF6C09", fontWeight:"bold"}}>6HRS</p></div>
+                                        <div className={styles.pricesdiv}><p style={{marginBottom:"0", fontSize:"25px", fontWeight:"bold"}}>₹1400</p><p style={{marginBottom:"0", color:"#FF6C09", fontWeight:"bold"}}>9HRS</p></div>
+                                        <div className={styles.pricesdiv}><p style={{marginBottom:"0", fontSize:"25px", fontWeight:"bold"}}>₹1600</p><p style={{marginBottom:"0", color:"#FF6C09", fontWeight:"bold"}}>12HRS</p></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div style={{ display: "flex", marginLeft: "2rem", marginRight: "2rem", backgroundColor: "white", borderRadius: "10px", marginBottom:"2rem", boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;", justifyContent: "space-between" }}>
                                 <div>
                                     <div className={styles.hotelimagediv}>
                                         <div className={styles.slider}>
@@ -215,7 +281,7 @@ const hoteldetailui = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div style={{display:"flex", justifyContent:"space-between", marginTop:"1rem", width:"90%"}}>
+                                    <div style={{display:"flex", justifyContent:"space-between", marginTop:"1rem", width:"96%"}}>
                                         <div className={styles.pricesdiv}><p style={{marginBottom:"0", fontSize:"25px", fontWeight:"bold"}}> ₹700</p><p style={{marginBottom:"0", color:"#FF6C09", fontWeight:"bold"}}>3HRS</p></div>
                                         <div className={styles.pricesdiv}><p style={{marginBottom:"0", fontSize:"25px", fontWeight:"bold"}}>₹1200</p><p style={{marginBottom:"0", color:"#FF6C09", fontWeight:"bold"}}>6HRS</p></div>
                                         <div className={styles.pricesdiv}><p style={{marginBottom:"0", fontSize:"25px", fontWeight:"bold"}}>₹1400</p><p style={{marginBottom:"0", color:"#FF6C09", fontWeight:"bold"}}>9HRS</p></div>
@@ -224,6 +290,123 @@ const hoteldetailui = () => {
                                 </div>
 
                             </div>
+                            <div style={{ display: "flex", marginLeft: "2rem", marginRight: "2rem", backgroundColor: "white", borderRadius: "10px", marginBottom:"2rem", boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;", justifyContent: "space-between" }}>
+                                <div>
+                                    <div className={styles.hotelimagediv}>
+                                        <div className={styles.slider}>
+                                            <img className={styles.thumbnail} src={sliderData.value} height={800} width={400} />
+                                            <p>Premium Stays</p>
+                                        </div>
+                                        <div style={{display:"flex", justifyContent:"center", paddingRight:"1rem"}}>
+                                        {
+                                            imgs.map((data, i) =>
+                                            <div style={{paddingRight:"15px", paddingTop:"15px"}}>
+                                                <img className={styles.smallcrousel} key={data.id} src={data.value} onClick={() => handleClick(i)} height={70} width={100} />
+                                                </div>)
+                                        }
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div style={{ margin: "2rem 2rem 2rem 0", justifyContent: "space-between", width: "60%" }}>
+                                    <div style={{ display: "flex" }}>
+                                        <div className={styles.hoteldata}>
+                                            <p className={styles.hotelname}>Hotel Golden Lawn</p>
+                                            <div className={styles.starimg}><img src="star.png" height={20} width={20} /><img src="star.png" height={20} width={20} /><img src="star.png" height={20} width={20} /></div>
+                                            <p className={styles.hoteladdress}><IoLocationSharp />Andheri East....</p>
+                                        </div>
+                                        <div className={styles.ratingdiv}><div className={styles.rating}>3.5</div>Very Good <p style={{ margin: "0 5px", color: "black" }}>( 8 Ratings )</p></div>
+                                    </div>
+                                    <div style={{ display: "flex", justifyContent: "space-between", margin: "0.5rem 7rem 0.5rem 0" }}>
+                                        <p style={{ display: "flex", alignItems: "center", color: "green", fontWeight: "bold" }}><PiCheckCircleLight style={{ marginRight: "5px", fontSize: "18px" }} />Couple Friendly</p>
+                                        <p style={{ display: "flex", alignItems: "center", fontWeight: "bold", color: "#FF6C09" }}><RxCrossCircled style={{ marginRight: "5px", fontSize: "18px" }} />Local ID not Accepted</p>
+                                        <p style={{ display: "flex", alignItems: "center", fontWeight: "bold", color: "green" }}><PiCheckCircleLight style={{ marginRight: "5px", fontSize: "18px" }} />Pay at Hotel</p>
+                                    </div>
+                                    <div style={{display:"flex", justifyContent:"space-between"}}>
+                                        <div style={{ display: "flex", justifyContent: "space-between" }}>
+                                            <p style={{marginRight:"2rem", marginBottom:"0"}}><LuParkingCircle style={{fontSize:"25px"}}/></p>
+                                            <p style={{marginRight:"2rem", marginBottom:"0"}}><TbAirConditioning style={{fontSize:"25px"}}/></p>
+                                            <p style={{marginRight:"2rem", marginBottom:"0"}}><FaSwimmingPool style={{fontSize:"25px"}}/></p>
+                                            <p style={{marginRight:"2rem", marginBottom:"0"}}>+7 more</p>
+                                        </div>
+                                        <div style={{display:"flex", alignItems:"baseline", marginTop:"2rem", marginRight:"4rem"}}>
+                                            <p style={{marginRight:"10px", marginBottom:"0"}}>Full Day</p>
+                                            <div style={{ position: "relative" }}>
+                                                <p style={{ fontSize: "22px", fontWeight: "bold", color: "darkgrey", padding: 0, margin: 0 }}> ₹ 2677</p>
+                                                <div className={styles.cutprice}>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style={{display:"flex", justifyContent:"space-between", marginTop:"1rem", width:"96%"}}>
+                                        <div className={styles.pricesdiv}><p style={{marginBottom:"0", fontSize:"25px", fontWeight:"bold"}}> ₹700</p><p style={{marginBottom:"0", color:"#FF6C09", fontWeight:"bold"}}>3HRS</p></div>
+                                        <div className={styles.pricesdiv}><p style={{marginBottom:"0", fontSize:"25px", fontWeight:"bold"}}>₹1200</p><p style={{marginBottom:"0", color:"#FF6C09", fontWeight:"bold"}}>6HRS</p></div>
+                                        <div className={styles.pricesdiv}><p style={{marginBottom:"0", fontSize:"25px", fontWeight:"bold"}}>₹1400</p><p style={{marginBottom:"0", color:"#FF6C09", fontWeight:"bold"}}>9HRS</p></div>
+                                        <div className={styles.pricesdiv}><p style={{marginBottom:"0", fontSize:"25px", fontWeight:"bold"}}>₹1600</p><p style={{marginBottom:"0", color:"#FF6C09", fontWeight:"bold"}}>12HRS</p></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div style={{ display: "flex", marginLeft: "2rem", marginRight: "2rem", backgroundColor: "white", borderRadius: "10px", marginBottom:"2rem", boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;", justifyContent: "space-between" }}>
+                                <div>
+                                    <div className={styles.hotelimagediv}>
+                                        <div className={styles.slider}>
+                                            <img className={styles.thumbnail} src={sliderData.value} height={800} width={400} />
+                                            <p>Premium Stays</p>
+                                        </div>
+                                        <div style={{display:"flex", justifyContent:"center", paddingRight:"1rem"}}>
+                                        {
+                                            imgs.map((data, i) =>
+                                            <div style={{paddingRight:"15px", paddingTop:"15px"}}>
+                                                <img className={styles.smallcrousel} key={data.id} src={data.value} onClick={() => handleClick(i)} height={70} width={100} />
+                                                </div>)
+                                        }
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div style={{ margin: "2rem 2rem 2rem 0", justifyContent: "space-between", width: "60%" }}>
+                                    <div style={{ display: "flex" }}>
+                                        <div className={styles.hoteldata}>
+                                            <p className={styles.hotelname}>Hotel Golden Lawn</p>
+                                            <div className={styles.starimg}><img src="star.png" height={20} width={20} /><img src="star.png" height={20} width={20} /><img src="star.png" height={20} width={20} /></div>
+                                            <p className={styles.hoteladdress}><IoLocationSharp />Andheri East....</p>
+                                        </div>
+                                        <div className={styles.ratingdiv}><div className={styles.rating}>3.5</div>Very Good <p style={{ margin: "0 5px", color: "black" }}>( 8 Ratings )</p></div>
+                                    </div>
+                                    <div style={{ display: "flex", justifyContent: "space-between", margin: "0.5rem 7rem 0.5rem 0" }}>
+                                        <p style={{ display: "flex", alignItems: "center", color: "green", fontWeight: "bold" }}><PiCheckCircleLight style={{ marginRight: "5px", fontSize: "18px" }} />Couple Friendly</p>
+                                        <p style={{ display: "flex", alignItems: "center", fontWeight: "bold", color: "#FF6C09" }}><RxCrossCircled style={{ marginRight: "5px", fontSize: "18px" }} />Local ID not Accepted</p>
+                                        <p style={{ display: "flex", alignItems: "center", fontWeight: "bold", color: "green" }}><PiCheckCircleLight style={{ marginRight: "5px", fontSize: "18px" }} />Pay at Hotel</p>
+                                    </div>
+                                    <div style={{display:"flex", justifyContent:"space-between"}}>
+                                        <div style={{ display: "flex", justifyContent: "space-between" }}>
+                                            <p style={{marginRight:"2rem", marginBottom:"0"}}><LuParkingCircle style={{fontSize:"25px"}}/></p>
+                                            <p style={{marginRight:"2rem", marginBottom:"0"}}><TbAirConditioning style={{fontSize:"25px"}}/></p>
+                                            <p style={{marginRight:"2rem", marginBottom:"0"}}><FaSwimmingPool style={{fontSize:"25px"}}/></p>
+                                            <p style={{marginRight:"2rem", marginBottom:"0"}}>+7 more</p>
+                                        </div>
+                                        <div style={{display:"flex", alignItems:"baseline", marginTop:"2rem", marginRight:"4rem"}}>
+                                            <p style={{marginRight:"10px", marginBottom:"0"}}>Full Day</p>
+                                            <div style={{ position: "relative" }}>
+                                                <p style={{ fontSize: "22px", fontWeight: "bold", color: "darkgrey", padding: 0, margin: 0 }}> ₹ 2677</p>
+                                                <div className={styles.cutprice}>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style={{display:"flex", justifyContent:"space-between", marginTop:"1rem", width:"96%"}}>
+                                        <div className={styles.pricesdiv}><p style={{marginBottom:"0", fontSize:"25px", fontWeight:"bold"}}> ₹700</p><p style={{marginBottom:"0", color:"#FF6C09", fontWeight:"bold"}}>3HRS</p></div>
+                                        <div className={styles.pricesdiv}><p style={{marginBottom:"0", fontSize:"25px", fontWeight:"bold"}}>₹1200</p><p style={{marginBottom:"0", color:"#FF6C09", fontWeight:"bold"}}>6HRS</p></div>
+                                        <div className={styles.pricesdiv}><p style={{marginBottom:"0", fontSize:"25px", fontWeight:"bold"}}>₹1400</p><p style={{marginBottom:"0", color:"#FF6C09", fontWeight:"bold"}}>9HRS</p></div>
+                                        <div className={styles.pricesdiv}><p style={{marginBottom:"0", fontSize:"25px", fontWeight:"bold"}}>₹1600</p><p style={{marginBottom:"0", color:"#FF6C09", fontWeight:"bold"}}>12HRS</p></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
 
                         </div>
                     </div>
