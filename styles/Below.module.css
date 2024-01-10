@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tangsa:wght@500&family=Poppins&display=swap');
+
+.body{
+    font-family: 'Poppins', sans-serif;
+}
+.hotelcardsmaindiv{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2.5rem;
+    margin-right: 11rem;
+    height: 255px;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.hotelscard{
+    border-radius: 10px;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.hotelimagediv img{
+    height: 20vh;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.hotelimagediv p{
+    background-color: rgb(203, 191, 61);
+    font-weight: 600;
+    width: 35%;
+    position: absolute;
+    font-size: 12px;
+    top:5%;
+    left: 0px ;
+    z-index: 1000;
+    padding-left: 5px;
+    color: white;
+}
+.hoteldata{
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.hotelname{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.hoteladdress{
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    color: rgb(83, 83, 83);
+    font-size: 12px;
+    margin-top: 3px;
+}
+.cutprice{
+    background-color: red;
+    width: 62px;
+    height: 1.5px;
+    margin-top: 2px;
+    transform: rotate(-14deg);
+    position: absolute;
+    top: 9px;
+}
+.dprice{
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.forhrs{
+    display: flex;
+    margin-bottom: 0;
+    align-items: center;
+}

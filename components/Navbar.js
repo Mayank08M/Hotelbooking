@@ -35,6 +35,11 @@ const navbarTabs = [
     id: 6,
     item: 'Hotelsearch',
     route: 'hoteldetailui'
+  },
+  {
+    id: 6,
+    item: 'Below',
+    route: 'belowpart'
   }
 ]
 
