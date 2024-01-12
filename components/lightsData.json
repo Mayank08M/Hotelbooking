@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name":"Grand MA 2",
+        "price":"2000/day",
+        "category":"Board",
+        "tag1":"flexible board",
+        "tag2":"very fast",
+        "tag3":"responsive",
+        "image":"./images/grandma2.jpeg"
+    },
+    {
+        "id": 2,
+        "name":"Blinder",
+        "price":"1500/day",
+        "category":"Light",
+        "tag1":"flexible board",
+        "tag2":"very fast",
+        "tag3":"responsive",
+        "image":"./images/blinder.jpeg"
+    },
+    {
+        "id": 3,
+        "name":"Blinder 4",
+        "price":"2000/day",
+        "category":"Light",
+        "tag1":"flexible board",
+        "tag2":"very fast",
+        "tag3":"responsive",
+        "image":"./images/blinder4.jpeg"
+    },
+    {
+        "id": 4,
+        "name":"Tiger Touch 2",
+        "price":"2500/day",
+        "category":"Board",
+        "tag1":"flexible board",
+        "tag2":"very fast",
+        "tag3":"responsive",
+        "image":"./images/tigertouch2.jpeg"
+    },
+    {
+        "id": 5,
+        "name":"Warm LED",
+        "price":"2000/day",
+        "category":"Light",
+        "tag1":"flexible board",
+        "tag2":"very fast",
+        "tag3":"responsive",
+        "image":"./images/warmled.jpeg"
+    },
+    {
+        "id": 6,
+        "name":"Sharphy",
+        "price":"2000/day",
+        "category":"Light",
+        "tag1":"flexible board",
+        "tag2":"very fast",
+        "tag3":"responsive",
+        "image":"./images/sharphy.jpeg"
+    }
+]

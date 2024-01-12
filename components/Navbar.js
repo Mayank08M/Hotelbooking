@@ -40,6 +40,11 @@ const navbarTabs = [
     id: 7,
     item: 'Below',
     route: 'belowpart'
+  },
+  {
+    id: 8,
+    item: 'Lights',
+    route: 'lightscard'
   }
 ]
 
