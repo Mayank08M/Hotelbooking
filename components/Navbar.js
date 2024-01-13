@@ -45,6 +45,11 @@ const navbarTabs = [
     id: 8,
     item: 'Lights',
     route: 'lightscard'
+  },
+  {
+    id: 9,
+    item: 'Checkout',
+    route: 'checkoutpage'
   }
 ]
 

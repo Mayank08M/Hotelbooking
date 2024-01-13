@@ -48,7 +48,7 @@ useEffect(() => {
           </div>
           <div style={{ marginTop:"1rem", padding:"0 1rem"}}>
             <div className={Hotelstyles.buynow}><button>Buy Now</button></div>
-            <div className={Hotelstyles.addtocart}><button>Add to cart +</button></div>
+            <div className={Hotelstyles.addtocart}><button>Add to cart</button></div>
           </div>
             </div>
            

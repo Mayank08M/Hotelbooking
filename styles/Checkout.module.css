@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tangsa:wght@500&family=Poppins&display=swap');
+
+.body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav{
+    display: flex;
+    margin: 10px 10px;
+    justify-content: space-between;
+    font-weight: bold;
+    position: sticky;
+}
+.nav ul{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+.nav ul li{
+    margin: 10px;
+}
+.navbutton{
+    background-color: #FF6C09;
+    padding-left:18px;
+    padding-right: 18px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    margin-right: 3.5rem;
+}
+.hoteldata{
+    width: 50%;
+    margin: 1rem 0.2rem 1rem 2rem;
+}
+.hoteladdress{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.hotelname{
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.starimg{
+    display: flex;
+    margin-bottom: 5px;
+    margin-top: 0.5rem;
+}
+.kela{
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: black;
+    color: rgb(88, 255, 10);
+    font-weight: bold;
+    font-size: 30px;
+}
