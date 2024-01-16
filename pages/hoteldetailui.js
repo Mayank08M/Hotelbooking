@@ -12,6 +12,8 @@ import { TbAirConditioning } from "react-icons/tb";
 import { FaSwimmingPool } from "react-icons/fa";
 import { PiSquaresFourThin } from "react-icons/pi";
 import { IoBedOutline } from "react-icons/io5";
+import ImageSlider from './ImageSlider';
+import { SliderData } from './SilderData';
 
 const hoteldetailui = () => {
     const imgs = [
@@ -32,6 +34,9 @@ const hoteldetailui = () => {
             value: "man1.jpg"
         }
     ];
+    function refreshPage() {
+        window.location.reload(false);
+      }
     const [sliderData, setSliderData] = useState(imgs[0]);
     const [currentIndex, setCurrentIndex] = useState(0);
     useEffect(() => {
@@ -101,7 +106,7 @@ const hoteldetailui = () => {
                     <div className={styles.matchdiv}><button className={styles.matchp}>Best Match<FaAngleRight /></button><p style={{ margin: "10px 30px" }}>Hotels in Mumbai</p></div>
                     <div style={{ display: "flex" }}>
                         <div className={styles.filtermaindiv}>
-                            <div className={styles.filterdiv}><p style={{ fontWeight: "bold", fontSize: "20px", marginBottom: "0" }}>Filters</p><button style={{ fontSize: "18px", color: "grey" }}>Clear</button>
+                            <div className={styles.filterdiv}><p style={{ fontWeight: "bold", fontSize: "20px", marginBottom: "0" }}>Filters</p><button onClick={refreshPage} style={{ fontSize: "18px", color: "grey" }}>Clear</button>
                             </div>
                             <br />
                             <div style={{ borderBottom: "1px solid grey" }}>
@@ -238,7 +243,7 @@ const hoteldetailui = () => {
                                 <div>
                                     <div className={styles.hotelimagediv}>
                                         <div className={styles.slider}>
-                                            <img className={styles.thumbnail} src={sliderData.value} height={800} width={400} />
+                                            <img className={styles.thumbnail} src={sliderData.value}/>
                                             <p>Premium Stays</p>
                                         </div>
                                         <div style={{ display: "flex", justifyContent: "center", paddingRight: "1rem" }}>
@@ -419,7 +424,9 @@ const hoteldetailui = () => {
                             <p style={{ fontSize: "25px", fontWeight: "bold", margin: "1rem 2rem" }}>Deluxe King Room</p>
                             <div style={{ display: "flex", padding: "1rem 2rem" }}>
                                 <div style={{ width: "75%" }}>
-                                    <div style={{ width: "100%", height: "100%" }}><img style={{ width: "100%", borderRadius: "none", height: "35rem" }} src='../images/hotel6.jpg'></img></div>
+                                    <div style={{ width: "100%", height: "35rem" }}>
+                                        <ImageSlider slides={SliderData}/>
+                                    </div>
                                 </div>
                                 <div style={{ width: "25%", marginLeft: "2rem" }}>
                                     <div style={{ display: "flex", fontSize: "20px", marginLeft: "5px" }}>
@@ -450,7 +457,7 @@ const hoteldetailui = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div style={{margin: "1rem 2rem", border: "1px solid grey", borderRadius: "5px" }}>
+                            <div style={{margin: "1rem 2rem", border: "1px solid grey", borderRadius: "5px", marginTop:"5rem" }}>
                                 
                                     <div style={{display:"flex", width:"100%", borderBottom:"1px solid grey"}}>
                                     <div style={{ background: "rgb(247, 240, 230)", padding: "1.5rem", textAlign: "center", fontSize: "25px", fontWeight: "bold", width: "50%", borderRight: "1px solid black", borderTopLeftRadius:"5px" }}>OPTIONS</div>
