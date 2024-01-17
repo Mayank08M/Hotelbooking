@@ -4,10 +4,7 @@ import { FaAngleRight } from "react-icons/fa6";
 import styles from '../styles/City.module.css'
 import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
-import hotelsData from '../components/hotelsData.json'
-import Hotelstyles from '../styles/Hotels.module.css'
-import Navbar from '../components/Navbar'
-import Footer from '../pages/Footer'
+import Foot from '../components/Foot.js'
 
 const city = () => {
   const imgs = [
@@ -219,6 +216,7 @@ const city = () => {
           </div>
         </div>
       </div>
+      <Foot />
       </div>
     </>
 

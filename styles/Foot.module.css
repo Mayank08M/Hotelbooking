@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tangsa:wght@500&family=Poppins&display=swap');
+
+.hotellist{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #F8EFE6;
+    font-family: 'Poppins', sans-serif;
+}
+
+.maindiv{
+     margin-top: 3rem;
+     margin-bottom: 3rem;
+     display: flex;
+}
+.heading{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.linkall{
+    margin-top: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #2B1F16;
+}
+.footerdiv{
+    background-color: #2B1F16;
+    font-family: 'Poppins', sans-serif;
+}
+.footerfirstdiv{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin: 2rem 0;
+    /* font-weight: bold; */
+    color: white;
+}
+.allfooterdiv{
+    padding: 2rem 0;
+}
+.socialdiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 3.5rem;
+    color: white;
+}
+.lastfooter{
+    background-color: white;
+}
+
+a.linkall:hover, a.linkall:active {color: blue;}
