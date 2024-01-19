@@ -39,10 +39,10 @@ const city = () => {
     <div>
       <div className={styles.slider}>
         <img className={styles.thumbnail} src={sliderData.value} height={640} width={1728} />
-        {
+        {/* {
           imgs.map((data, i)=>
           <img className={styles.smallcrousel} key={data.id} src={data.value} onClick={()=> handleClick(i)} height={70} width={100}/>)
-        }
+        } */}
       </div>
     </div>
     <div>

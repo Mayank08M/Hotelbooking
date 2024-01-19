@@ -9,15 +9,14 @@ const about = () => {
     <Navbar/>
     <div className={Aboutstyles.container}>
       <section className={Aboutstyles.about}>
-        <h1>About Us</h1>
-        <p>Hourlyrooms is growing daily!!!</p>
+        <h1 style={{color:"red"}}>About Us</h1>
+        <p>ShivShakti Enterprises is Growing Daily!!!</p>
         <div className={Aboutstyles.aboutinfo}>
             <div className={Aboutstyles.aboutimg}>
-                <img src="/hor.png" alt="Hourlyrooms Logo"/>
+                <img src="/shivshakti.png" alt="Hourlyrooms Logo"/>
             </div>
             <div className={Aboutstyles.paradiv}>
-     <p>Hourlyrooms is India's biggest and number one platform for booking hotel rooms on hourly basis. We are noticed on daiyhunt and various other news platforms for our achievements.
-      Your <strong>privacy</strong> is our <strong>priority</strong>.
+     <p>Shivshakti enterprises is a well experienced light vendor in Mumbai since <strong>2005.</strong> Customer satisfaction is our <strong>first priority</strong>.
      </p>
                 <button className={Aboutstyles.button}>Read More...</button>
             </div>
@@ -32,9 +31,9 @@ const about = () => {
                     <img src="/man1.jpg" alt="User 1"/>
                 </div>
                 <div className={Aboutstyles.cardinfo}>
-                    <h2 className={Aboutstyles.cardname}>Jane</h2>
+                    <h2 className={Aboutstyles.cardname}>Arvind Mishra</h2>
                     <p className={Aboutstyles.cardrole}>CEO and Founder</p>
-                    <p className={Aboutstyles.cardemail}>jane@example.com</p>
+                    <p className={Aboutstyles.cardemail}>arvindmishra@example.com</p>
                     <p><button className={Aboutstyles.button}>Contact</button></p>
                 </div>
             </div>
@@ -43,9 +42,9 @@ const about = () => {
                     <img src="/man2.jpg" alt="User 2"/>
                 </div>
                 <div className={Aboutstyles.cardinfo}>
-                    <h2 className={Aboutstyles.cardname}>Miller</h2>
-                    <p className={Aboutstyles.cardrole}>Co-Founder</p>
-                    <p className={Aboutstyles.cardemail}>Miller@example.com</p>
+                    <h2 className={Aboutstyles.cardname}>Suraj Mishra</h2>
+                    <p className={Aboutstyles.cardrole}>Son of CEO</p>
+                    <p className={Aboutstyles.cardemail}>Chutiya@example.com</p>
                     <p><button className={Aboutstyles.button}>Contact</button></p>
                 </div>
             </div>
@@ -54,9 +53,9 @@ const about = () => {
                     <img src="/man3.jpg" alt="User 3"/>
                 </div>
                 <div className={Aboutstyles.cardinfo}>
-                    <h2 className={Aboutstyles.cardname}>Joe</h2>
-                    <p className={Aboutstyles.cardrole}>Co-Founder</p>
-                    <p className={Aboutstyles.cardemail}>Joe@example.com</p>
+                    <h2 className={Aboutstyles.cardname}>Shivam Mishra</h2>
+                    <p className={Aboutstyles.cardrole}>Son of Founder</p>
+                    <p className={Aboutstyles.cardemail}>Shivam@example.com</p>
                     <p><button className={Aboutstyles.button}>Contact</button></p>
                 </div>
             </div>
