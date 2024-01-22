@@ -4,9 +4,9 @@ import Image from 'next/image'
 import Twitter from '../public/images/Icons/twittericon.png'
 import Insta from '../public/images/Icons/instaicon.png'
 import Facebook from '../public/images/Icons/fbicon.png'
-import Dialer from '../public/images/Icons/dialer.png'
-import Location from '../public/images/Icons/location.png'
-import Mail from '../public/images/Icons/mail.png'
+import { IoCallOutline } from "react-icons/io5";
+import { IoLocationOutline } from "react-icons/io5";
+import { CiMail } from "react-icons/ci";
 
 
 const footer = () => {
@@ -57,10 +57,10 @@ const footer = () => {
               </div>
               <div className={styles.content}>
                 <ul className={styles.quicklink}>
-                  <li className={styles.linkli}><a className={styles.linka} href="/">Home</a></li>
-                  <li className={styles.linkli}><a className={styles.linka} href="/hotels">Hotels</a></li>
-                  <li className={styles.linkli}><a className={styles.linka} href="/about">About</a></li>
-                  <li className={styles.linkli}><a className={styles.linka} href="/contact">Contact Us</a></li>
+                  <li className={styles.linkli}><div className={styles.linka} href="/">Home</div></li>
+                  <li className={styles.linkli}><div className={styles.linka} href="/hotels">Hotels</div></li>
+                  <li className={styles.linkli}><div className={styles.linka} href="/about">About</div></li>
+                  <li className={styles.linkli}><div className={styles.linka} href="/contact">Contact Us</div></li>
                 </ul>
               </div>
             </div>
@@ -83,27 +83,9 @@ const footer = () => {
               </div>
               <div className={styles.content}>
                 <ul className={styles.contactlist}>
-                  <li><a className={styles.linka} href="#"><Image
-                className={styles.cicon}
-                src={Dialer}
-                alt="dialer icon"
-                width={30}
-                height={20}
-              />+91 2546317825</a></li>
-                  <li><a className={styles.linka} href="#"><Image
-                className={styles.cicon}
-                src={Mail}
-                alt="mail icon"
-                width={30}
-                height={20}
-              />care@hourlyrooms.co.in </a></li>
-                  <li><a className={styles.linka} href="#"><Image
-                className={styles.cicon}
-                src={Location}
-                alt="location icon"
-                width={30}
-                height={20}
-              />Antariksh House,Marol</a></li>
+                  <li className={styles.linkli}><div className={styles.linka} href="#"><IoCallOutline style={{marginRight:"1rem"}}/>+91 2546317825</div></li>
+                  <li className={styles.linkli}><div className={styles.linka} href="#"><CiMail style={{marginRight:"1rem"}}/>care@hourlyrooms.co.in </div></li>
+                  <li className={styles.linkli}><div className={styles.linka} href="#"><IoLocationOutline style={{marginRight:"1rem"}}/>Antariksh House,Marol</div></li>
                 </ul>
               </div>
             </div>
